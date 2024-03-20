@@ -1,0 +1,3216 @@
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-228.pth
+1 bike  	65.043%
+2 building	81.210%
+3 fence 	52.938%
+4 others	54.602%
+5 person	80.500%
+6 pole  	58.007%
+7 road  	95.162%
+8 sidewalk	89.435%
+9 traffic sign	78.085%
+10 vegetation	62.270%
+11 vehicle	83.870%
+12 bridge	53.130%
+13 rider	34.840%
+14 sky  	96.265%
+----------     mean_IoU	70.383%	freq_IoU	80.583%	mean_pixel_acc	79.242%	pixel_acc	88.864%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-200.pth
+1 bike  	64.691%
+2 building	81.198%
+3 fence 	52.131%
+4 others	46.562%
+5 person	79.025%
+6 pole  	53.616%
+7 road  	94.970%
+8 sidewalk	88.790%
+9 traffic sign	75.989%
+10 vegetation	61.091%
+11 vehicle	82.194%
+12 bridge	50.504%
+13 rider	26.143%
+14 sky  	95.939%
+----------     mean_IoU	68.060%	freq_IoU	79.647%	mean_pixel_acc	76.346%	pixel_acc	88.372%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-382.pth
+1 bike  	66.384%
+2 building	82.919%
+3 fence 	51.453%
+4 others	57.780%
+5 person	80.336%
+6 pole  	60.769%
+7 road  	95.510%
+8 sidewalk	89.488%
+9 traffic sign	79.638%
+10 vegetation	63.300%
+11 vehicle	83.806%
+12 bridge	52.922%
+13 rider	24.498%
+14 sky  	96.748%
+----------     mean_IoU	70.396%	freq_IoU	81.186%	mean_pixel_acc	78.270%	pixel_acc	89.339%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-456.pth
+1 bike  	67.595%
+2 building	83.461%
+3 fence 	55.170%
+4 others	58.633%
+5 person	81.910%
+6 pole  	63.165%
+7 road  	95.736%
+8 sidewalk	89.905%
+9 traffic sign	81.697%
+10 vegetation	63.866%
+11 vehicle	83.886%
+12 bridge	53.507%
+13 rider	28.371%
+14 sky  	97.331%
+----------     mean_IoU	71.731%	freq_IoU	81.937%	mean_pixel_acc	79.753%	pixel_acc	89.802%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-240.pth
+1 bike  	65.383%
+2 building	82.150%
+3 fence 	52.663%
+4 others	55.914%
+5 person	79.568%
+6 pole  	56.453%
+7 road  	95.223%
+8 sidewalk	89.048%
+9 traffic sign	77.105%
+10 vegetation	62.607%
+11 vehicle	84.365%
+12 bridge	54.704%
+13 rider	28.280%
+14 sky  	96.430%
+----------     mean_IoU	69.992%	freq_IoU	80.827%	mean_pixel_acc	78.931%	pixel_acc	89.007%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-428.pth
+1 bike  	66.641%
+2 building	82.861%
+3 fence 	52.825%
+4 others	58.596%
+5 person	80.951%
+6 pole  	61.846%
+7 road  	95.536%
+8 sidewalk	89.565%
+9 traffic sign	80.246%
+10 vegetation	62.666%
+11 vehicle	84.940%
+12 bridge	53.823%
+13 rider	26.992%
+14 sky  	96.827%
+----------     mean_IoU	71.022%	freq_IoU	81.486%	mean_pixel_acc	78.814%	pixel_acc	89.536%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-298.pth
+1 bike  	65.830%
+2 building	82.116%
+3 fence 	52.467%
+4 others	56.838%
+5 person	80.780%
+6 pole  	58.544%
+7 road  	95.423%
+8 sidewalk	88.588%
+9 traffic sign	78.531%
+10 vegetation	62.704%
+11 vehicle	84.634%
+12 bridge	53.351%
+13 rider	28.431%
+14 sky  	97.107%
+----------     mean_IoU	70.382%	freq_IoU	80.944%	mean_pixel_acc	78.223%	pixel_acc	89.218%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-390.pth
+1 bike  	66.281%
+2 building	83.036%
+3 fence 	52.626%
+4 others	59.596%
+5 person	80.887%
+6 pole  	61.305%
+7 road  	95.658%
+8 sidewalk	89.482%
+9 traffic sign	80.471%
+10 vegetation	63.124%
+11 vehicle	84.918%
+12 bridge	55.397%
+13 rider	24.695%
+14 sky  	96.731%
+----------     mean_IoU	71.015%	freq_IoU	81.601%	mean_pixel_acc	78.982%	pixel_acc	89.597%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-364.pth
+1 bike  	67.380%
+2 building	83.104%
+3 fence 	52.552%
+4 others	58.444%
+5 person	81.208%
+6 pole  	62.302%
+7 road  	95.625%
+8 sidewalk	90.072%
+9 traffic sign	80.836%
+10 vegetation	63.608%
+11 vehicle	83.786%
+12 bridge	56.842%
+13 rider	27.721%
+14 sky  	96.723%
+----------     mean_IoU	71.443%	freq_IoU	81.699%	mean_pixel_acc	79.901%	pixel_acc	89.599%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-426.pth
+1 bike  	67.123%
+2 building	83.022%
+3 fence 	53.509%
+4 others	58.890%
+5 person	81.541%
+6 pole  	62.795%
+7 road  	95.683%
+8 sidewalk	90.064%
+9 traffic sign	80.550%
+10 vegetation	63.641%
+11 vehicle	85.110%
+12 bridge	56.503%
+13 rider	28.640%
+14 sky  	97.284%
+----------     mean_IoU	71.740%	freq_IoU	81.916%	mean_pixel_acc	79.740%	pixel_acc	89.766%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-454.pth
+1 bike  	66.722%
+2 building	82.931%
+3 fence 	52.886%
+4 others	57.746%
+5 person	81.598%
+6 pole  	61.699%
+7 road  	95.630%
+8 sidewalk	89.435%
+9 traffic sign	81.128%
+10 vegetation	63.823%
+11 vehicle	83.573%
+12 bridge	52.619%
+13 rider	27.155%
+14 sky  	97.179%
+----------     mean_IoU	71.009%	freq_IoU	81.416%	mean_pixel_acc	78.746%	pixel_acc	89.486%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-244.pth
+1 bike  	65.656%
+2 building	82.114%
+3 fence 	52.620%
+4 others	55.471%
+5 person	79.472%
+6 pole  	57.693%
+7 road  	95.201%
+8 sidewalk	89.143%
+9 traffic sign	77.842%
+10 vegetation	62.369%
+11 vehicle	84.149%
+12 bridge	52.791%
+13 rider	26.533%
+14 sky  	96.509%
+----------     mean_IoU	69.826%	freq_IoU	80.728%	mean_pixel_acc	78.325%	pixel_acc	89.011%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-236.pth
+1 bike  	64.428%
+2 building	80.921%
+3 fence 	50.394%
+4 others	53.420%
+5 person	79.896%
+6 pole  	57.427%
+7 road  	95.208%
+8 sidewalk	89.383%
+9 traffic sign	76.560%
+10 vegetation	61.861%
+11 vehicle	84.055%
+12 bridge	53.776%
+13 rider	26.720%
+14 sky  	96.310%
+----------     mean_IoU	69.311%	freq_IoU	80.232%	mean_pixel_acc	77.496%	pixel_acc	88.712%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-170.pth
+1 bike  	64.665%
+2 building	82.016%
+3 fence 	51.905%
+4 others	51.630%
+5 person	77.823%
+6 pole  	52.490%
+7 road  	94.794%
+8 sidewalk	88.330%
+9 traffic sign	75.937%
+10 vegetation	61.753%
+11 vehicle	83.008%
+12 bridge	52.249%
+13 rider	29.070%
+14 sky  	96.512%
+----------     mean_IoU	68.727%	freq_IoU	80.032%	mean_pixel_acc	77.657%	pixel_acc	88.533%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-386.pth
+1 bike  	66.621%
+2 building	81.987%
+3 fence 	51.227%
+4 others	56.436%
+5 person	81.058%
+6 pole  	62.620%
+7 road  	95.550%
+8 sidewalk	89.537%
+9 traffic sign	81.148%
+10 vegetation	63.314%
+11 vehicle	84.031%
+12 bridge	51.724%
+13 rider	26.336%
+14 sky  	96.997%
+----------     mean_IoU	70.613%	freq_IoU	80.987%	mean_pixel_acc	78.517%	pixel_acc	89.244%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-366.pth
+1 bike  	67.127%
+2 building	82.703%
+3 fence 	53.663%
+4 others	57.598%
+5 person	81.272%
+6 pole  	62.147%
+7 road  	95.599%
+8 sidewalk	89.460%
+9 traffic sign	80.226%
+10 vegetation	63.383%
+11 vehicle	84.810%
+12 bridge	54.365%
+13 rider	29.895%
+14 sky  	96.923%
+----------     mean_IoU	71.369%	freq_IoU	81.555%	mean_pixel_acc	79.410%	pixel_acc	89.566%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-214.pth
+1 bike  	65.192%
+2 building	81.522%
+3 fence 	50.342%
+4 others	52.475%
+5 person	79.775%
+6 pole  	57.159%
+7 road  	94.996%
+8 sidewalk	88.938%
+9 traffic sign	75.574%
+10 vegetation	61.930%
+11 vehicle	83.011%
+12 bridge	52.350%
+13 rider	30.476%
+14 sky  	96.124%
+----------     mean_IoU	69.276%	freq_IoU	80.136%	mean_pixel_acc	77.820%	pixel_acc	88.687%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-196.pth
+1 bike  	64.237%
+2 building	81.761%
+3 fence 	50.191%
+4 others	50.697%
+5 person	79.448%
+6 pole  	56.054%
+7 road  	94.899%
+8 sidewalk	88.877%
+9 traffic sign	76.088%
+10 vegetation	61.573%
+11 vehicle	82.325%
+12 bridge	53.922%
+13 rider	30.501%
+14 sky  	96.348%
+----------     mean_IoU	69.066%	freq_IoU	80.067%	mean_pixel_acc	77.889%	pixel_acc	88.608%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-152.pth
+1 bike  	64.381%
+2 building	80.767%
+3 fence 	50.559%
+4 others	47.979%
+5 person	77.315%
+6 pole  	49.833%
+7 road  	94.639%
+8 sidewalk	87.656%
+9 traffic sign	69.123%
+10 vegetation	61.659%
+11 vehicle	81.343%
+12 bridge	50.381%
+13 rider	27.112%
+14 sky  	96.209%
+----------     mean_IoU	67.068%	freq_IoU	78.971%	mean_pixel_acc	75.446%	pixel_acc	87.923%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-146.pth
+1 bike  	62.517%
+2 building	79.794%
+3 fence 	50.524%
+4 others	50.981%
+5 person	77.945%
+6 pole  	49.653%
+7 road  	94.482%
+8 sidewalk	88.428%
+9 traffic sign	69.052%
+10 vegetation	60.387%
+11 vehicle	86.920%
+12 bridge	53.223%
+13 rider	30.521%
+14 sky  	95.880%
+----------     mean_IoU	67.879%	freq_IoU	79.453%	mean_pixel_acc	75.958%	pixel_acc	88.202%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-252.pth
+1 bike  	65.417%
+2 building	81.981%
+3 fence 	54.008%
+4 others	53.077%
+5 person	79.927%
+6 pole  	57.527%
+7 road  	95.236%
+8 sidewalk	89.602%
+9 traffic sign	78.602%
+10 vegetation	63.252%
+11 vehicle	83.449%
+12 bridge	52.316%
+13 rider	28.192%
+14 sky  	96.547%
+----------     mean_IoU	69.938%	freq_IoU	80.760%	mean_pixel_acc	78.384%	pixel_acc	89.026%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-452.pth
+1 bike  	67.031%
+2 building	82.724%
+3 fence 	53.351%
+4 others	58.073%
+5 person	81.168%
+6 pole  	62.185%
+7 road  	95.668%
+8 sidewalk	90.002%
+9 traffic sign	81.936%
+10 vegetation	63.905%
+11 vehicle	85.254%
+12 bridge	54.881%
+13 rider	28.766%
+14 sky  	96.768%
+----------     mean_IoU	71.551%	freq_IoU	81.721%	mean_pixel_acc	79.749%	pixel_acc	89.629%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-346.pth
+1 bike  	67.055%
+2 building	83.019%
+3 fence 	53.317%
+4 others	57.926%
+5 person	81.164%
+6 pole  	61.527%
+7 road  	95.427%
+8 sidewalk	89.348%
+9 traffic sign	79.519%
+10 vegetation	62.961%
+11 vehicle	83.814%
+12 bridge	55.467%
+13 rider	29.106%
+14 sky  	96.929%
+----------     mean_IoU	71.184%	freq_IoU	81.482%	mean_pixel_acc	79.301%	pixel_acc	89.501%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-176.pth
+1 bike  	64.651%
+2 building	81.403%
+3 fence 	51.301%
+4 others	51.874%
+5 person	78.468%
+6 pole  	54.060%
+7 road  	94.830%
+8 sidewalk	88.598%
+9 traffic sign	76.206%
+10 vegetation	61.834%
+11 vehicle	82.992%
+12 bridge	49.125%
+13 rider	23.479%
+14 sky  	96.158%
+----------     mean_IoU	68.213%	freq_IoU	79.763%	mean_pixel_acc	76.975%	pixel_acc	88.397%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-288.pth
+1 bike  	66.024%
+2 building	81.575%
+3 fence 	52.717%
+4 others	56.374%
+5 person	80.884%
+6 pole  	59.151%
+7 road  	95.408%
+8 sidewalk	89.507%
+9 traffic sign	78.794%
+10 vegetation	62.520%
+11 vehicle	85.318%
+12 bridge	50.294%
+13 rider	28.782%
+14 sky  	96.548%
+----------     mean_IoU	70.278%	freq_IoU	80.851%	mean_pixel_acc	78.810%	pixel_acc	89.095%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-184.pth
+1 bike  	61.716%
+2 building	80.934%
+3 fence 	47.527%
+4 others	53.605%
+5 person	79.578%
+6 pole  	54.808%
+7 road  	94.820%
+8 sidewalk	89.083%
+9 traffic sign	72.281%
+10 vegetation	61.973%
+11 vehicle	82.417%
+12 bridge	53.430%
+13 rider	34.808%
+14 sky  	96.166%
+----------     mean_IoU	68.796%	freq_IoU	79.690%	mean_pixel_acc	77.577%	pixel_acc	88.313%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-410.pth
+1 bike  	66.944%
+2 building	82.848%
+3 fence 	53.172%
+4 others	58.878%
+5 person	80.877%
+6 pole  	63.246%
+7 road  	95.705%
+8 sidewalk	89.633%
+9 traffic sign	81.223%
+10 vegetation	63.654%
+11 vehicle	84.285%
+12 bridge	51.634%
+13 rider	27.450%
+14 sky  	97.238%
+----------     mean_IoU	71.199%	freq_IoU	81.496%	mean_pixel_acc	79.289%	pixel_acc	89.522%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-466.pth
+1 bike  	67.183%
+2 building	83.193%
+3 fence 	52.674%
+4 others	59.279%
+5 person	81.662%
+6 pole  	62.243%
+7 road  	95.742%
+8 sidewalk	90.043%
+9 traffic sign	82.005%
+10 vegetation	63.578%
+11 vehicle	83.983%
+12 bridge	53.753%
+13 rider	26.138%
+14 sky  	96.837%
+----------     mean_IoU	71.308%	freq_IoU	81.698%	mean_pixel_acc	79.380%	pixel_acc	89.656%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-420.pth
+1 bike  	66.580%
+2 building	83.240%
+3 fence 	52.154%
+4 others	57.786%
+5 person	81.546%
+6 pole  	62.457%
+7 road  	95.697%
+8 sidewalk	89.509%
+9 traffic sign	80.126%
+10 vegetation	63.611%
+11 vehicle	83.610%
+12 bridge	54.542%
+13 rider	27.409%
+14 sky  	96.944%
+----------     mean_IoU	71.086%	freq_IoU	81.541%	mean_pixel_acc	78.994%	pixel_acc	89.560%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-132.pth
+1 bike  	64.414%
+2 building	80.057%
+3 fence 	48.794%
+4 others	49.711%
+5 person	77.234%
+6 pole  	49.933%
+7 road  	94.345%
+8 sidewalk	88.106%
+9 traffic sign	73.122%
+10 vegetation	59.590%
+11 vehicle	81.947%
+12 bridge	44.569%
+13 rider	28.118%
+14 sky  	96.615%
+----------     mean_IoU	66.897%	freq_IoU	78.546%	mean_pixel_acc	75.533%	pixel_acc	87.663%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-300.pth
+1 bike  	66.164%
+2 building	82.198%
+3 fence 	54.503%
+4 others	56.730%
+5 person	80.532%
+6 pole  	59.363%
+7 road  	95.451%
+8 sidewalk	89.276%
+9 traffic sign	78.027%
+10 vegetation	62.559%
+11 vehicle	84.582%
+12 bridge	51.604%
+13 rider	26.869%
+14 sky  	96.745%
+----------     mean_IoU	70.329%	freq_IoU	81.062%	mean_pixel_acc	78.414%	pixel_acc	89.263%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-284.pth
+1 bike  	66.215%
+2 building	81.433%
+3 fence 	52.509%
+4 others	55.940%
+5 person	80.453%
+6 pole  	58.381%
+7 road  	95.354%
+8 sidewalk	89.940%
+9 traffic sign	78.777%
+10 vegetation	62.203%
+11 vehicle	85.103%
+12 bridge	50.219%
+13 rider	26.670%
+14 sky  	96.021%
+----------     mean_IoU	69.944%	freq_IoU	80.727%	mean_pixel_acc	78.256%	pixel_acc	89.011%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-350.pth
+1 bike  	66.340%
+2 building	82.410%
+3 fence 	51.984%
+4 others	56.564%
+5 person	81.065%
+6 pole  	60.808%
+7 road  	95.562%
+8 sidewalk	90.014%
+9 traffic sign	80.304%
+10 vegetation	63.539%
+11 vehicle	83.382%
+12 bridge	51.546%
+13 rider	27.105%
+14 sky  	95.917%
+----------     mean_IoU	70.467%	freq_IoU	81.066%	mean_pixel_acc	78.732%	pixel_acc	89.245%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-392.pth
+1 bike  	66.895%
+2 building	83.631%
+3 fence 	54.542%
+4 others	58.145%
+5 person	80.342%
+6 pole  	62.752%
+7 road  	95.545%
+8 sidewalk	89.644%
+9 traffic sign	79.796%
+10 vegetation	63.661%
+11 vehicle	84.334%
+12 bridge	56.799%
+13 rider	25.285%
+14 sky  	96.907%
+----------     mean_IoU	71.306%	freq_IoU	81.863%	mean_pixel_acc	79.745%	pixel_acc	89.688%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-402.pth
+1 bike  	66.451%
+2 building	82.833%
+3 fence 	52.520%
+4 others	58.282%
+5 person	81.174%
+6 pole  	61.900%
+7 road  	95.510%
+8 sidewalk	89.813%
+9 traffic sign	80.952%
+10 vegetation	62.583%
+11 vehicle	84.307%
+12 bridge	53.922%
+13 rider	26.209%
+14 sky  	97.027%
+----------     mean_IoU	70.963%	freq_IoU	81.439%	mean_pixel_acc	78.769%	pixel_acc	89.514%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-462.pth
+1 bike  	67.605%
+2 building	83.009%
+3 fence 	53.955%
+4 others	58.310%
+5 person	81.855%
+6 pole  	62.489%
+7 road  	95.653%
+8 sidewalk	90.161%
+9 traffic sign	81.769%
+10 vegetation	63.201%
+11 vehicle	84.802%
+12 bridge	54.385%
+13 rider	27.709%
+14 sky  	97.190%
+----------     mean_IoU	71.578%	freq_IoU	81.826%	mean_pixel_acc	79.442%	pixel_acc	89.721%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-100.pth
+1 bike  	63.770%
+2 building	80.799%
+3 fence 	46.971%
+4 others	50.923%
+5 person	76.533%
+6 pole  	48.389%
+7 road  	93.969%
+8 sidewalk	87.192%
+9 traffic sign	70.216%
+10 vegetation	61.069%
+11 vehicle	83.732%
+12 bridge	51.035%
+13 rider	30.142%
+14 sky  	95.980%
+----------     mean_IoU	67.194%	freq_IoU	78.863%	mean_pixel_acc	76.820%	pixel_acc	87.698%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-380.pth
+1 bike  	66.091%
+2 building	82.584%
+3 fence 	52.325%
+4 others	56.612%
+5 person	79.352%
+6 pole  	60.304%
+7 road  	95.436%
+8 sidewalk	89.516%
+9 traffic sign	79.448%
+10 vegetation	63.297%
+11 vehicle	84.543%
+12 bridge	53.327%
+13 rider	28.270%
+14 sky  	96.926%
+----------     mean_IoU	70.574%	freq_IoU	81.155%	mean_pixel_acc	78.512%	pixel_acc	89.289%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-180.pth
+1 bike  	63.987%
+2 building	81.448%
+3 fence 	51.472%
+4 others	52.257%
+5 person	78.461%
+6 pole  	54.596%
+7 road  	94.959%
+8 sidewalk	88.736%
+9 traffic sign	74.062%
+10 vegetation	62.034%
+11 vehicle	83.690%
+12 bridge	52.346%
+13 rider	27.168%
+14 sky  	96.024%
+----------     mean_IoU	68.660%	freq_IoU	80.026%	mean_pixel_acc	77.538%	pixel_acc	88.544%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-234.pth
+1 bike  	64.344%
+2 building	81.483%
+3 fence 	51.332%
+4 others	55.481%
+5 person	79.582%
+6 pole  	57.825%
+7 road  	95.235%
+8 sidewalk	88.082%
+9 traffic sign	78.465%
+10 vegetation	62.888%
+11 vehicle	84.837%
+12 bridge	54.340%
+13 rider	29.439%
+14 sky  	96.196%
+----------     mean_IoU	69.966%	freq_IoU	80.503%	mean_pixel_acc	78.926%	pixel_acc	88.829%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-136.pth
+1 bike  	64.394%
+2 building	80.836%
+3 fence 	49.498%
+4 others	53.790%
+5 person	77.272%
+6 pole  	49.533%
+7 road  	94.390%
+8 sidewalk	87.693%
+9 traffic sign	76.152%
+10 vegetation	59.513%
+11 vehicle	81.952%
+12 bridge	45.694%
+13 rider	28.657%
+14 sky  	95.006%
+----------     mean_IoU	67.456%	freq_IoU	78.874%	mean_pixel_acc	76.510%	pixel_acc	87.866%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-460.pth
+1 bike  	67.763%
+2 building	83.559%
+3 fence 	54.262%
+4 others	60.268%
+5 person	81.947%
+6 pole  	62.914%
+7 road  	95.738%
+8 sidewalk	89.648%
+9 traffic sign	81.442%
+10 vegetation	63.541%
+11 vehicle	84.351%
+12 bridge	56.386%
+13 rider	30.409%
+14 sky  	97.153%
+----------     mean_IoU	72.099%	freq_IoU	82.072%	mean_pixel_acc	80.289%	pixel_acc	89.860%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-286.pth
+1 bike  	67.000%
+2 building	81.763%
+3 fence 	53.490%
+4 others	56.200%
+5 person	81.227%
+6 pole  	58.941%
+7 road  	95.308%
+8 sidewalk	89.695%
+9 traffic sign	77.960%
+10 vegetation	63.354%
+11 vehicle	85.274%
+12 bridge	52.073%
+13 rider	34.313%
+14 sky  	96.431%
+----------     mean_IoU	70.931%	freq_IoU	81.103%	mean_pixel_acc	79.174%	pixel_acc	89.267%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-344.pth
+1 bike  	66.333%
+2 building	82.448%
+3 fence 	50.416%
+4 others	56.418%
+5 person	80.802%
+6 pole  	60.291%
+7 road  	95.434%
+8 sidewalk	88.687%
+9 traffic sign	79.383%
+10 vegetation	62.774%
+11 vehicle	83.410%
+12 bridge	54.690%
+13 rider	26.968%
+14 sky  	96.562%
+----------     mean_IoU	70.330%	freq_IoU	80.882%	mean_pixel_acc	78.349%	pixel_acc	89.170%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-276.pth
+1 bike  	66.640%
+2 building	81.905%
+3 fence 	52.808%
+4 others	55.514%
+5 person	80.929%
+6 pole  	58.688%
+7 road  	95.205%
+8 sidewalk	89.171%
+9 traffic sign	76.209%
+10 vegetation	62.775%
+11 vehicle	85.072%
+12 bridge	52.744%
+13 rider	35.652%
+14 sky  	95.786%
+----------     mean_IoU	70.650%	freq_IoU	80.921%	mean_pixel_acc	79.261%	pixel_acc	89.109%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-338.pth
+1 bike  	66.869%
+2 building	82.795%
+3 fence 	52.561%
+4 others	58.017%
+5 person	81.289%
+6 pole  	60.752%
+7 road  	95.453%
+8 sidewalk	89.751%
+9 traffic sign	80.301%
+10 vegetation	62.550%
+11 vehicle	83.502%
+12 bridge	54.726%
+13 rider	26.799%
+14 sky  	96.959%
+----------     mean_IoU	70.880%	freq_IoU	81.344%	mean_pixel_acc	79.106%	pixel_acc	89.411%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-296.pth
+1 bike  	67.446%
+2 building	80.853%
+3 fence 	52.645%
+4 others	54.804%
+5 person	80.677%
+6 pole  	59.653%
+7 road  	95.385%
+8 sidewalk	89.556%
+9 traffic sign	78.865%
+10 vegetation	62.051%
+11 vehicle	86.051%
+12 bridge	50.045%
+13 rider	27.782%
+14 sky  	96.230%
+----------     mean_IoU	70.146%	freq_IoU	80.656%	mean_pixel_acc	78.001%	pixel_acc	89.016%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-126.pth
+1 bike  	63.690%
+2 building	80.185%
+3 fence 	49.609%
+4 others	48.392%
+5 person	77.202%
+6 pole  	51.297%
+7 road  	94.412%
+8 sidewalk	88.133%
+9 traffic sign	73.731%
+10 vegetation	62.023%
+11 vehicle	83.295%
+12 bridge	55.487%
+13 rider	30.063%
+14 sky  	96.006%
+----------     mean_IoU	68.109%	freq_IoU	79.265%	mean_pixel_acc	77.044%	pixel_acc	88.031%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-322.pth
+1 bike  	67.070%
+2 building	81.951%
+3 fence 	54.603%
+4 others	56.657%
+5 person	80.212%
+6 pole  	60.102%
+7 road  	95.526%
+8 sidewalk	89.285%
+9 traffic sign	79.099%
+10 vegetation	63.313%
+11 vehicle	85.008%
+12 bridge	49.633%
+13 rider	28.016%
+14 sky  	96.905%
+----------     mean_IoU	70.527%	freq_IoU	81.048%	mean_pixel_acc	78.899%	pixel_acc	89.240%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-384.pth
+1 bike  	66.943%
+2 building	82.666%
+3 fence 	54.446%
+4 others	55.893%
+5 person	80.645%
+6 pole  	62.186%
+7 road  	95.262%
+8 sidewalk	89.406%
+9 traffic sign	79.915%
+10 vegetation	62.593%
+11 vehicle	83.519%
+12 bridge	53.070%
+13 rider	28.054%
+14 sky  	97.019%
+----------     mean_IoU	70.830%	freq_IoU	81.216%	mean_pixel_acc	78.789%	pixel_acc	89.338%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-316.pth
+1 bike  	66.665%
+2 building	81.468%
+3 fence 	53.033%
+4 others	56.723%
+5 person	80.561%
+6 pole  	59.268%
+7 road  	95.517%
+8 sidewalk	89.286%
+9 traffic sign	79.350%
+10 vegetation	62.830%
+11 vehicle	86.131%
+12 bridge	52.556%
+13 rider	25.671%
+14 sky  	96.780%
+----------     mean_IoU	70.417%	freq_IoU	81.009%	mean_pixel_acc	78.387%	pixel_acc	89.227%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-220.pth
+1 bike  	65.778%
+2 building	80.206%
+3 fence 	49.282%
+4 others	48.433%
+5 person	80.086%
+6 pole  	55.176%
+7 road  	95.089%
+8 sidewalk	89.389%
+9 traffic sign	75.355%
+10 vegetation	61.997%
+11 vehicle	83.605%
+12 bridge	50.933%
+13 rider	30.008%
+14 sky  	96.498%
+----------     mean_IoU	68.702%	freq_IoU	79.693%	mean_pixel_acc	76.943%	pixel_acc	88.378%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-262.pth
+1 bike  	66.178%
+2 building	81.914%
+3 fence 	53.263%
+4 others	52.859%
+5 person	80.046%
+6 pole  	58.168%
+7 road  	95.240%
+8 sidewalk	88.927%
+9 traffic sign	78.856%
+10 vegetation	61.967%
+11 vehicle	84.671%
+12 bridge	54.111%
+13 rider	29.852%
+14 sky  	96.586%
+----------     mean_IoU	70.188%	freq_IoU	80.800%	mean_pixel_acc	78.411%	pixel_acc	89.086%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-498.pth
+1 bike  	66.636%
+2 building	82.962%
+3 fence 	53.248%
+4 others	58.398%
+5 person	81.467%
+6 pole  	63.165%
+7 road  	95.716%
+8 sidewalk	90.008%
+9 traffic sign	80.818%
+10 vegetation	63.855%
+11 vehicle	83.942%
+12 bridge	52.134%
+13 rider	27.219%
+14 sky  	96.830%
+----------     mean_IoU	71.171%	freq_IoU	81.564%	mean_pixel_acc	79.082%	pixel_acc	89.576%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-356.pth
+1 bike  	66.903%
+2 building	82.703%
+3 fence 	53.598%
+4 others	56.062%
+5 person	81.502%
+6 pole  	63.240%
+7 road  	95.557%
+8 sidewalk	89.510%
+9 traffic sign	80.566%
+10 vegetation	64.025%
+11 vehicle	83.958%
+12 bridge	52.807%
+13 rider	30.600%
+14 sky  	97.039%
+----------     mean_IoU	71.291%	freq_IoU	81.435%	mean_pixel_acc	79.585%	pixel_acc	89.479%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-470.pth
+1 bike  	66.969%
+2 building	82.987%
+3 fence 	51.700%
+4 others	60.060%
+5 person	81.940%
+6 pole  	63.992%
+7 road  	95.739%
+8 sidewalk	89.742%
+9 traffic sign	82.601%
+10 vegetation	63.361%
+11 vehicle	84.078%
+12 bridge	52.343%
+13 rider	26.860%
+14 sky  	97.358%
+----------     mean_IoU	71.409%	freq_IoU	81.588%	mean_pixel_acc	79.328%	pixel_acc	89.615%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-260.pth
+1 bike  	65.550%
+2 building	81.217%
+3 fence 	53.781%
+4 others	52.370%
+5 person	80.601%
+6 pole  	58.830%
+7 road  	95.235%
+8 sidewalk	89.402%
+9 traffic sign	78.804%
+10 vegetation	62.915%
+11 vehicle	84.737%
+12 bridge	50.432%
+13 rider	34.503%
+14 sky  	96.551%
+----------     mean_IoU	70.352%	freq_IoU	80.642%	mean_pixel_acc	78.648%	pixel_acc	88.990%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-472.pth
+1 bike  	66.930%
+2 building	83.574%
+3 fence 	52.128%
+4 others	59.423%
+5 person	81.996%
+6 pole  	63.316%
+7 road  	95.678%
+8 sidewalk	89.924%
+9 traffic sign	81.726%
+10 vegetation	63.517%
+11 vehicle	83.811%
+12 bridge	54.592%
+13 rider	27.328%
+14 sky  	97.256%
+----------     mean_IoU	71.514%	freq_IoU	81.819%	mean_pixel_acc	79.420%	pixel_acc	89.742%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-218.pth
+1 bike  	66.153%
+2 building	81.765%
+3 fence 	50.490%
+4 others	53.460%
+5 person	79.447%
+6 pole  	55.143%
+7 road  	95.145%
+8 sidewalk	89.237%
+9 traffic sign	75.679%
+10 vegetation	62.240%
+11 vehicle	82.974%
+12 bridge	52.512%
+13 rider	29.999%
+14 sky  	96.211%
+----------     mean_IoU	69.318%	freq_IoU	80.284%	mean_pixel_acc	77.881%	pixel_acc	88.738%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-238.pth
+1 bike  	65.492%
+2 building	80.951%
+3 fence 	49.798%
+4 others	55.267%
+5 person	80.282%
+6 pole  	59.281%
+7 road  	95.169%
+8 sidewalk	89.397%
+9 traffic sign	78.993%
+10 vegetation	62.228%
+11 vehicle	85.195%
+12 bridge	53.181%
+13 rider	30.065%
+14 sky  	95.568%
+----------     mean_IoU	70.062%	freq_IoU	80.450%	mean_pixel_acc	78.408%	pixel_acc	88.874%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-320.pth
+1 bike  	66.301%
+2 building	82.132%
+3 fence 	52.759%
+4 others	57.282%
+5 person	80.732%
+6 pole  	59.767%
+7 road  	95.418%
+8 sidewalk	89.043%
+9 traffic sign	78.958%
+10 vegetation	62.514%
+11 vehicle	85.287%
+12 bridge	54.172%
+13 rider	29.243%
+14 sky  	96.847%
+----------     mean_IoU	70.747%	freq_IoU	81.147%	mean_pixel_acc	78.949%	pixel_acc	89.300%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-336.pth
+1 bike  	66.554%
+2 building	82.148%
+3 fence 	51.966%
+4 others	55.869%
+5 person	81.051%
+6 pole  	60.023%
+7 road  	95.436%
+8 sidewalk	89.101%
+9 traffic sign	79.669%
+10 vegetation	61.626%
+11 vehicle	85.219%
+12 bridge	54.202%
+13 rider	26.496%
+14 sky  	96.734%
+----------     mean_IoU	70.435%	freq_IoU	81.055%	mean_pixel_acc	78.206%	pixel_acc	89.277%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-388.pth
+1 bike  	66.236%
+2 building	83.157%
+3 fence 	52.846%
+4 others	58.476%
+5 person	81.266%
+6 pole  	60.216%
+7 road  	95.540%
+8 sidewalk	89.426%
+9 traffic sign	80.417%
+10 vegetation	63.103%
+11 vehicle	83.259%
+12 bridge	55.466%
+13 rider	24.804%
+14 sky  	96.754%
+----------     mean_IoU	70.783%	freq_IoU	81.431%	mean_pixel_acc	78.636%	pixel_acc	89.503%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-302.pth
+1 bike  	66.020%
+2 building	81.913%
+3 fence 	54.414%
+4 others	56.512%
+5 person	80.522%
+6 pole  	59.999%
+7 road  	95.442%
+8 sidewalk	89.374%
+9 traffic sign	79.474%
+10 vegetation	63.474%
+11 vehicle	84.513%
+12 bridge	51.676%
+13 rider	25.841%
+14 sky  	96.302%
+----------     mean_IoU	70.391%	freq_IoU	81.015%	mean_pixel_acc	78.437%	pixel_acc	89.267%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-266.pth
+1 bike  	60.008%
+2 building	81.085%
+3 fence 	49.658%
+4 others	50.276%
+5 person	79.031%
+6 pole  	54.862%
+7 road  	94.750%
+8 sidewalk	88.184%
+9 traffic sign	75.072%
+10 vegetation	63.255%
+11 vehicle	82.605%
+12 bridge	51.311%
+13 rider	33.812%
+14 sky  	93.910%
+----------     mean_IoU	68.416%	freq_IoU	79.509%	mean_pixel_acc	79.196%	pixel_acc	87.860%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-308.pth
+1 bike  	66.703%
+2 building	82.092%
+3 fence 	54.858%
+4 others	55.746%
+5 person	80.613%
+6 pole  	59.940%
+7 road  	95.348%
+8 sidewalk	89.204%
+9 traffic sign	79.812%
+10 vegetation	63.544%
+11 vehicle	85.056%
+12 bridge	53.811%
+13 rider	28.853%
+14 sky  	96.210%
+----------     mean_IoU	70.842%	freq_IoU	81.211%	mean_pixel_acc	79.016%	pixel_acc	89.359%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-436.pth
+1 bike  	66.557%
+2 building	82.996%
+3 fence 	53.601%
+4 others	58.807%
+5 person	81.719%
+6 pole  	61.595%
+7 road  	95.678%
+8 sidewalk	89.635%
+9 traffic sign	81.381%
+10 vegetation	64.132%
+11 vehicle	84.216%
+12 bridge	53.657%
+13 rider	25.360%
+14 sky  	97.246%
+----------     mean_IoU	71.184%	freq_IoU	81.643%	mean_pixel_acc	78.893%	pixel_acc	89.633%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-160.pth
+1 bike  	63.887%
+2 building	81.056%
+3 fence 	49.447%
+4 others	52.077%
+5 person	77.757%
+6 pole  	53.362%
+7 road  	94.450%
+8 sidewalk	88.260%
+9 traffic sign	75.574%
+10 vegetation	62.250%
+11 vehicle	82.032%
+12 bridge	48.721%
+13 rider	32.982%
+14 sky  	96.709%
+----------     mean_IoU	68.469%	freq_IoU	79.381%	mean_pixel_acc	77.621%	pixel_acc	88.115%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-418.pth
+1 bike  	66.286%
+2 building	83.227%
+3 fence 	52.754%
+4 others	57.947%
+5 person	81.358%
+6 pole  	61.273%
+7 road  	95.561%
+8 sidewalk	89.866%
+9 traffic sign	79.901%
+10 vegetation	63.690%
+11 vehicle	83.406%
+12 bridge	54.639%
+13 rider	26.663%
+14 sky  	96.702%
+----------     mean_IoU	70.948%	freq_IoU	81.526%	mean_pixel_acc	78.891%	pixel_acc	89.554%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-406.pth
+1 bike  	66.666%
+2 building	82.844%
+3 fence 	52.397%
+4 others	58.442%
+5 person	81.337%
+6 pole  	61.684%
+7 road  	95.628%
+8 sidewalk	89.904%
+9 traffic sign	78.923%
+10 vegetation	62.790%
+11 vehicle	84.085%
+12 bridge	52.531%
+13 rider	25.739%
+14 sky  	96.974%
+----------     mean_IoU	70.710%	freq_IoU	81.383%	mean_pixel_acc	78.422%	pixel_acc	89.491%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-154.pth
+1 bike  	64.162%
+2 building	80.499%
+3 fence 	48.532%
+4 others	48.620%
+5 person	78.992%
+6 pole  	52.086%
+7 road  	94.689%
+8 sidewalk	88.215%
+9 traffic sign	74.053%
+10 vegetation	62.207%
+11 vehicle	82.552%
+12 bridge	45.657%
+13 rider	36.102%
+14 sky  	96.613%
+----------     mean_IoU	68.070%	freq_IoU	79.113%	mean_pixel_acc	77.232%	pixel_acc	87.986%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-130.pth
+1 bike  	63.907%
+2 building	79.066%
+3 fence 	47.979%
+4 others	50.592%
+5 person	75.763%
+6 pole  	51.501%
+7 road  	94.219%
+8 sidewalk	87.719%
+9 traffic sign	69.595%
+10 vegetation	61.084%
+11 vehicle	85.228%
+12 bridge	50.099%
+13 rider	25.104%
+14 sky  	96.143%
+----------     mean_IoU	67.000%	freq_IoU	78.618%	mean_pixel_acc	75.563%	pixel_acc	87.641%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-312.pth
+1 bike  	66.256%
+2 building	81.722%
+3 fence 	54.805%
+4 others	57.867%
+5 person	80.558%
+6 pole  	59.699%
+7 road  	95.445%
+8 sidewalk	88.677%
+9 traffic sign	79.930%
+10 vegetation	63.202%
+11 vehicle	85.418%
+12 bridge	48.780%
+13 rider	28.328%
+14 sky  	96.851%
+----------     mean_IoU	70.538%	freq_IoU	80.944%	mean_pixel_acc	78.817%	pixel_acc	89.197%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-118.pth
+1 bike  	63.234%
+2 building	81.131%
+3 fence 	48.588%
+4 others	51.001%
+5 person	76.324%
+6 pole  	51.049%
+7 road  	94.308%
+8 sidewalk	88.065%
+9 traffic sign	72.719%
+10 vegetation	61.795%
+11 vehicle	82.808%
+12 bridge	53.672%
+13 rider	28.078%
+14 sky  	96.189%
+----------     mean_IoU	67.783%	freq_IoU	79.305%	mean_pixel_acc	77.225%	pixel_acc	88.015%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-192.pth
+1 bike  	65.188%
+2 building	81.506%
+3 fence 	50.905%
+4 others	54.198%
+5 person	78.581%
+6 pole  	55.246%
+7 road  	94.984%
+8 sidewalk	88.772%
+9 traffic sign	76.503%
+10 vegetation	61.559%
+11 vehicle	84.353%
+12 bridge	52.368%
+13 rider	29.680%
+14 sky  	95.590%
+----------     mean_IoU	69.245%	freq_IoU	80.188%	mean_pixel_acc	78.181%	pixel_acc	88.668%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-314.pth
+1 bike  	66.506%
+2 building	81.790%
+3 fence 	54.126%
+4 others	55.866%
+5 person	80.607%
+6 pole  	60.463%
+7 road  	95.313%
+8 sidewalk	89.413%
+9 traffic sign	78.605%
+10 vegetation	62.827%
+11 vehicle	84.699%
+12 bridge	51.067%
+13 rider	25.384%
+14 sky  	96.353%
+----------     mean_IoU	70.216%	freq_IoU	80.908%	mean_pixel_acc	78.303%	pixel_acc	89.177%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-246.pth
+1 bike  	66.002%
+2 building	81.862%
+3 fence 	51.999%
+4 others	53.748%
+5 person	80.098%
+6 pole  	57.602%
+7 road  	95.246%
+8 sidewalk	89.327%
+9 traffic sign	77.803%
+10 vegetation	61.280%
+11 vehicle	83.986%
+12 bridge	54.398%
+13 rider	27.173%
+14 sky  	96.628%
+----------     mean_IoU	69.797%	freq_IoU	80.663%	mean_pixel_acc	77.826%	pixel_acc	89.003%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-248.pth
+1 bike  	65.754%
+2 building	81.674%
+3 fence 	51.284%
+4 others	54.427%
+5 person	79.917%
+6 pole  	58.935%
+7 road  	95.234%
+8 sidewalk	89.169%
+9 traffic sign	78.339%
+10 vegetation	62.352%
+11 vehicle	83.991%
+12 bridge	52.665%
+13 rider	26.706%
+14 sky  	96.629%
+----------     mean_IoU	69.791%	freq_IoU	80.553%	mean_pixel_acc	78.217%	pixel_acc	88.930%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-486.pth
+1 bike  	66.684%
+2 building	82.967%
+3 fence 	52.840%
+4 others	58.292%
+5 person	81.892%
+6 pole  	63.404%
+7 road  	95.764%
+8 sidewalk	90.022%
+9 traffic sign	82.435%
+10 vegetation	63.890%
+11 vehicle	83.652%
+12 bridge	51.508%
+13 rider	25.649%
+14 sky  	97.016%
+----------     mean_IoU	71.144%	freq_IoU	81.546%	mean_pixel_acc	79.251%	pixel_acc	89.585%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-172.pth
+1 bike  	64.523%
+2 building	81.712%
+3 fence 	51.005%
+4 others	52.398%
+5 person	78.248%
+6 pole  	53.464%
+7 road  	94.798%
+8 sidewalk	87.778%
+9 traffic sign	74.838%
+10 vegetation	61.088%
+11 vehicle	83.840%
+12 bridge	52.368%
+13 rider	25.427%
+14 sky  	96.433%
+----------     mean_IoU	68.423%	freq_IoU	79.901%	mean_pixel_acc	77.044%	pixel_acc	88.495%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-340.pth
+1 bike  	66.360%
+2 building	82.846%
+3 fence 	53.989%
+4 others	57.044%
+5 person	80.837%
+6 pole  	61.305%
+7 road  	95.515%
+8 sidewalk	89.868%
+9 traffic sign	79.249%
+10 vegetation	63.530%
+11 vehicle	84.160%
+12 bridge	55.677%
+13 rider	26.318%
+14 sky  	96.509%
+----------     mean_IoU	70.943%	freq_IoU	81.518%	mean_pixel_acc	79.162%	pixel_acc	89.505%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-114.pth
+1 bike  	63.562%
+2 building	81.639%
+3 fence 	48.231%
+4 others	52.198%
+5 person	76.525%
+6 pole  	51.220%
+7 road  	94.164%
+8 sidewalk	87.439%
+9 traffic sign	73.310%
+10 vegetation	61.486%
+11 vehicle	81.623%
+12 bridge	53.487%
+13 rider	28.943%
+14 sky  	95.998%
+----------     mean_IoU	67.845%	freq_IoU	79.243%	mean_pixel_acc	77.369%	pixel_acc	88.044%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-120.pth
+1 bike  	62.499%
+2 building	81.080%
+3 fence 	48.636%
+4 others	51.692%
+5 person	77.173%
+6 pole  	50.305%
+7 road  	94.216%
+8 sidewalk	88.501%
+9 traffic sign	70.766%
+10 vegetation	61.218%
+11 vehicle	82.118%
+12 bridge	54.102%
+13 rider	26.122%
+14 sky  	95.836%
+----------     mean_IoU	67.448%	freq_IoU	79.238%	mean_pixel_acc	76.211%	pixel_acc	88.055%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-358.pth
+1 bike  	66.517%
+2 building	80.827%
+3 fence 	49.462%
+4 others	57.086%
+5 person	80.948%
+6 pole  	60.123%
+7 road  	95.461%
+8 sidewalk	89.832%
+9 traffic sign	80.619%
+10 vegetation	62.735%
+11 vehicle	85.223%
+12 bridge	49.981%
+13 rider	26.803%
+14 sky  	96.548%
+----------     mean_IoU	70.155%	freq_IoU	80.556%	mean_pixel_acc	77.693%	pixel_acc	89.007%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-422.pth
+1 bike  	66.839%
+2 building	82.950%
+3 fence 	52.312%
+4 others	57.117%
+5 person	81.653%
+6 pole  	62.383%
+7 road  	95.712%
+8 sidewalk	89.580%
+9 traffic sign	79.404%
+10 vegetation	63.386%
+11 vehicle	83.944%
+12 bridge	54.510%
+13 rider	29.029%
+14 sky  	97.017%
+----------     mean_IoU	71.131%	freq_IoU	81.501%	mean_pixel_acc	78.905%	pixel_acc	89.558%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-166.pth
+1 bike  	64.033%
+2 building	81.656%
+3 fence 	50.270%
+4 others	51.707%
+5 person	77.911%
+6 pole  	53.173%
+7 road  	94.736%
+8 sidewalk	88.751%
+9 traffic sign	74.542%
+10 vegetation	60.588%
+11 vehicle	82.168%
+12 bridge	51.736%
+13 rider	29.816%
+14 sky  	96.445%
+----------     mean_IoU	68.395%	freq_IoU	79.724%	mean_pixel_acc	77.210%	pixel_acc	88.359%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-326.pth
+1 bike  	66.721%
+2 building	82.010%
+3 fence 	52.183%
+4 others	54.998%
+5 person	80.936%
+6 pole  	60.070%
+7 road  	95.494%
+8 sidewalk	88.498%
+9 traffic sign	79.069%
+10 vegetation	62.995%
+11 vehicle	84.247%
+12 bridge	51.452%
+13 rider	27.513%
+14 sky  	96.557%
+----------     mean_IoU	70.196%	freq_IoU	80.786%	mean_pixel_acc	78.671%	pixel_acc	89.086%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-210.pth
+1 bike  	64.917%
+2 building	81.157%
+3 fence 	51.435%
+4 others	49.755%
+5 person	79.205%
+6 pole  	53.432%
+7 road  	95.068%
+8 sidewalk	89.194%
+9 traffic sign	74.592%
+10 vegetation	60.767%
+11 vehicle	82.496%
+12 bridge	51.148%
+13 rider	26.051%
+14 sky  	96.589%
+----------     mean_IoU	68.272%	freq_IoU	79.803%	mean_pixel_acc	76.578%	pixel_acc	88.461%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-134.pth
+1 bike  	63.551%
+2 building	79.706%
+3 fence 	48.350%
+4 others	51.538%
+5 person	78.045%
+6 pole  	51.326%
+7 road  	94.533%
+8 sidewalk	87.757%
+9 traffic sign	72.729%
+10 vegetation	61.510%
+11 vehicle	85.447%
+12 bridge	45.842%
+13 rider	28.239%
+14 sky  	96.173%
+----------     mean_IoU	67.482%	freq_IoU	78.961%	mean_pixel_acc	76.172%	pixel_acc	87.900%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-202.pth
+1 bike  	65.050%
+2 building	81.466%
+3 fence 	51.109%
+4 others	50.654%
+5 person	78.766%
+6 pole  	55.979%
+7 road  	95.108%
+8 sidewalk	88.855%
+9 traffic sign	75.772%
+10 vegetation	61.000%
+11 vehicle	83.222%
+12 bridge	53.204%
+13 rider	26.365%
+14 sky  	95.638%
+----------     mean_IoU	68.728%	freq_IoU	80.020%	mean_pixel_acc	77.508%	pixel_acc	88.563%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-150.pth
+1 bike  	62.761%
+2 building	80.124%
+3 fence 	46.686%
+4 others	49.660%
+5 person	77.574%
+6 pole  	50.461%
+7 road  	94.419%
+8 sidewalk	87.790%
+9 traffic sign	74.314%
+10 vegetation	61.034%
+11 vehicle	81.868%
+12 bridge	48.532%
+13 rider	30.604%
+14 sky  	95.512%
+----------     mean_IoU	67.239%	freq_IoU	78.612%	mean_pixel_acc	75.927%	pixel_acc	87.713%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-492.pth
+1 bike  	67.310%
+2 building	83.361%
+3 fence 	52.969%
+4 others	57.456%
+5 person	81.755%
+6 pole  	63.663%
+7 road  	95.727%
+8 sidewalk	89.458%
+9 traffic sign	81.169%
+10 vegetation	63.509%
+11 vehicle	83.637%
+12 bridge	54.292%
+13 rider	28.872%
+14 sky  	97.228%
+----------     mean_IoU	71.458%	freq_IoU	81.681%	mean_pixel_acc	79.054%	pixel_acc	89.675%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-496.pth
+1 bike  	66.647%
+2 building	83.586%
+3 fence 	52.995%
+4 others	58.138%
+5 person	82.057%
+6 pole  	62.082%
+7 road  	95.713%
+8 sidewalk	90.095%
+9 traffic sign	81.451%
+10 vegetation	62.614%
+11 vehicle	83.421%
+12 bridge	57.348%
+13 rider	27.829%
+14 sky  	97.185%
+----------     mean_IoU	71.511%	freq_IoU	81.871%	mean_pixel_acc	79.206%	pixel_acc	89.763%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-306.pth
+1 bike  	67.242%
+2 building	82.546%
+3 fence 	53.749%
+4 others	56.639%
+5 person	80.554%
+6 pole  	57.708%
+7 road  	95.448%
+8 sidewalk	89.443%
+9 traffic sign	76.680%
+10 vegetation	63.140%
+11 vehicle	85.141%
+12 bridge	55.050%
+13 rider	28.961%
+14 sky  	96.702%
+----------     mean_IoU	70.643%	freq_IoU	81.338%	mean_pixel_acc	78.659%	pixel_acc	89.399%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-128.pth
+1 bike  	63.416%
+2 building	81.182%
+3 fence 	49.860%
+4 others	51.500%
+5 person	77.182%
+6 pole  	50.831%
+7 road  	94.361%
+8 sidewalk	88.309%
+9 traffic sign	69.686%
+10 vegetation	61.600%
+11 vehicle	84.001%
+12 bridge	55.464%
+13 rider	26.695%
+14 sky  	95.781%
+----------     mean_IoU	67.848%	freq_IoU	79.600%	mean_pixel_acc	76.611%	pixel_acc	88.276%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-342.pth
+1 bike  	66.027%
+2 building	81.732%
+3 fence 	51.799%
+4 others	56.601%
+5 person	80.638%
+6 pole  	59.475%
+7 road  	95.514%
+8 sidewalk	89.668%
+9 traffic sign	79.870%
+10 vegetation	62.816%
+11 vehicle	85.320%
+12 bridge	52.800%
+13 rider	26.447%
+14 sky  	96.296%
+----------     mean_IoU	70.357%	freq_IoU	80.978%	mean_pixel_acc	78.178%	pixel_acc	89.212%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-494.pth
+1 bike  	66.060%
+2 building	82.713%
+3 fence 	51.086%
+4 others	58.248%
+5 person	81.299%
+6 pole  	61.535%
+7 road  	95.780%
+8 sidewalk	89.867%
+9 traffic sign	81.734%
+10 vegetation	62.214%
+11 vehicle	83.136%
+12 bridge	51.482%
+13 rider	26.789%
+14 sky  	96.824%
+----------     mean_IoU	70.626%	freq_IoU	81.159%	mean_pixel_acc	78.086%	pixel_acc	89.374%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-122.pth
+1 bike  	63.626%
+2 building	81.212%
+3 fence 	49.056%
+4 others	53.650%
+5 person	77.102%
+6 pole  	48.463%
+7 road  	94.375%
+8 sidewalk	88.562%
+9 traffic sign	72.216%
+10 vegetation	60.869%
+11 vehicle	83.967%
+12 bridge	53.562%
+13 rider	30.312%
+14 sky  	95.988%
+----------     mean_IoU	68.069%	freq_IoU	79.574%	mean_pixel_acc	77.267%	pixel_acc	88.185%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-268.pth
+1 bike  	64.573%
+2 building	80.817%
+3 fence 	51.905%
+4 others	53.925%
+5 person	81.276%
+6 pole  	56.715%
+7 road  	94.470%
+8 sidewalk	88.877%
+9 traffic sign	78.301%
+10 vegetation	62.982%
+11 vehicle	82.411%
+12 bridge	46.501%
+13 rider	42.599%
+14 sky  	96.669%
+----------     mean_IoU	70.144%	freq_IoU	79.920%	mean_pixel_acc	79.808%	pixel_acc	88.433%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-106.pth
+1 bike  	63.872%
+2 building	80.594%
+3 fence 	49.157%
+4 others	51.269%
+5 person	77.598%
+6 pole  	48.817%
+7 road  	94.055%
+8 sidewalk	88.062%
+9 traffic sign	70.940%
+10 vegetation	60.108%
+11 vehicle	83.276%
+12 bridge	53.368%
+13 rider	37.038%
+14 sky  	96.025%
+----------     mean_IoU	68.156%	freq_IoU	79.191%	mean_pixel_acc	77.279%	pixel_acc	87.958%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-398.pth
+1 bike  	66.746%
+2 building	82.350%
+3 fence 	53.016%
+4 others	57.540%
+5 person	81.052%
+6 pole  	63.685%
+7 road  	95.651%
+8 sidewalk	90.028%
+9 traffic sign	80.122%
+10 vegetation	63.711%
+11 vehicle	85.077%
+12 bridge	51.765%
+13 rider	27.692%
+14 sky  	96.903%
+----------     mean_IoU	71.096%	freq_IoU	81.427%	mean_pixel_acc	79.127%	pixel_acc	89.483%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-290.pth
+1 bike  	66.368%
+2 building	81.387%
+3 fence 	52.182%
+4 others	54.975%
+5 person	81.044%
+6 pole  	59.364%
+7 road  	95.401%
+8 sidewalk	89.172%
+9 traffic sign	78.619%
+10 vegetation	62.321%
+11 vehicle	85.576%
+12 bridge	51.400%
+13 rider	30.784%
+14 sky  	96.721%
+----------     mean_IoU	70.380%	freq_IoU	80.791%	mean_pixel_acc	78.488%	pixel_acc	89.098%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-280.pth
+1 bike  	66.764%
+2 building	81.569%
+3 fence 	52.525%
+4 others	54.828%
+5 person	80.872%
+6 pole  	58.659%
+7 road  	95.352%
+8 sidewalk	88.959%
+9 traffic sign	78.490%
+10 vegetation	62.853%
+11 vehicle	86.330%
+12 bridge	53.733%
+13 rider	35.691%
+14 sky  	96.746%
+----------     mean_IoU	70.955%	freq_IoU	81.029%	mean_pixel_acc	79.408%	pixel_acc	89.193%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-362.pth
+1 bike  	66.713%
+2 building	82.740%
+3 fence 	52.805%
+4 others	57.948%
+5 person	80.687%
+6 pole  	60.972%
+7 road  	95.530%
+8 sidewalk	89.306%
+9 traffic sign	79.074%
+10 vegetation	62.801%
+11 vehicle	84.127%
+12 bridge	54.796%
+13 rider	27.197%
+14 sky  	96.692%
+----------     mean_IoU	70.814%	freq_IoU	81.317%	mean_pixel_acc	78.863%	pixel_acc	89.405%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-396.pth
+1 bike  	66.239%
+2 building	83.345%
+3 fence 	52.799%
+4 others	57.348%
+5 person	81.252%
+6 pole  	60.570%
+7 road  	95.534%
+8 sidewalk	89.268%
+9 traffic sign	79.389%
+10 vegetation	63.205%
+11 vehicle	83.812%
+12 bridge	56.765%
+13 rider	27.456%
+14 sky  	96.925%
+----------     mean_IoU	70.993%	freq_IoU	81.561%	mean_pixel_acc	78.785%	pixel_acc	89.562%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-102.pth
+1 bike  	63.138%
+2 building	79.782%
+3 fence 	46.172%
+4 others	48.645%
+5 person	75.811%
+6 pole  	47.955%
+7 road  	94.051%
+8 sidewalk	87.940%
+9 traffic sign	71.584%
+10 vegetation	58.928%
+11 vehicle	83.585%
+12 bridge	48.270%
+13 rider	30.155%
+14 sky  	95.648%
+----------     mean_IoU	66.547%	freq_IoU	78.325%	mean_pixel_acc	75.326%	pixel_acc	87.465%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-258.pth
+1 bike  	65.854%
+2 building	81.057%
+3 fence 	52.908%
+4 others	55.564%
+5 person	80.381%
+6 pole  	58.194%
+7 road  	95.173%
+8 sidewalk	89.479%
+9 traffic sign	78.094%
+10 vegetation	62.874%
+11 vehicle	84.813%
+12 bridge	49.028%
+13 rider	27.058%
+14 sky  	96.354%
+----------     mean_IoU	69.774%	freq_IoU	80.488%	mean_pixel_acc	77.972%	pixel_acc	88.899%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-412.pth
+1 bike  	66.679%
+2 building	83.596%
+3 fence 	54.676%
+4 others	59.043%
+5 person	80.323%
+6 pole  	63.464%
+7 road  	95.507%
+8 sidewalk	90.037%
+9 traffic sign	80.791%
+10 vegetation	63.456%
+11 vehicle	84.068%
+12 bridge	55.717%
+13 rider	28.445%
+14 sky  	96.571%
+----------     mean_IoU	71.598%	freq_IoU	81.877%	mean_pixel_acc	79.653%	pixel_acc	89.740%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-216.pth
+1 bike  	65.473%
+2 building	81.182%
+3 fence 	50.091%
+4 others	50.447%
+5 person	79.985%
+6 pole  	55.762%
+7 road  	95.033%
+8 sidewalk	88.541%
+9 traffic sign	75.114%
+10 vegetation	61.508%
+11 vehicle	83.383%
+12 bridge	50.970%
+13 rider	31.683%
+14 sky  	96.477%
+----------     mean_IoU	68.975%	freq_IoU	79.913%	mean_pixel_acc	77.656%	pixel_acc	88.509%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-148.pth
+1 bike  	63.739%
+2 building	79.703%
+3 fence 	49.533%
+4 others	49.115%
+5 person	78.102%
+6 pole  	52.621%
+7 road  	94.523%
+8 sidewalk	88.134%
+9 traffic sign	73.652%
+10 vegetation	61.234%
+11 vehicle	86.023%
+12 bridge	48.747%
+13 rider	30.594%
+14 sky  	96.553%
+----------     mean_IoU	68.019%	freq_IoU	79.241%	mean_pixel_acc	76.537%	pixel_acc	88.048%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-370.pth
+1 bike  	66.072%
+2 building	82.341%
+3 fence 	52.199%
+4 others	55.749%
+5 person	81.309%
+6 pole  	61.033%
+7 road  	95.602%
+8 sidewalk	89.027%
+9 traffic sign	80.298%
+10 vegetation	63.057%
+11 vehicle	84.958%
+12 bridge	53.140%
+13 rider	25.435%
+14 sky  	96.787%
+----------     mean_IoU	70.501%	freq_IoU	81.156%	mean_pixel_acc	78.297%	pixel_acc	89.343%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-212.pth
+1 bike  	64.356%
+2 building	81.649%
+3 fence 	49.274%
+4 others	50.456%
+5 person	79.197%
+6 pole  	52.854%
+7 road  	94.941%
+8 sidewalk	88.240%
+9 traffic sign	73.860%
+10 vegetation	61.306%
+11 vehicle	83.374%
+12 bridge	54.042%
+13 rider	28.039%
+14 sky  	96.260%
+----------     mean_IoU	68.418%	freq_IoU	79.891%	mean_pixel_acc	76.821%	pixel_acc	88.506%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-140.pth
+1 bike  	64.267%
+2 building	80.165%
+3 fence 	50.925%
+4 others	50.352%
+5 person	77.298%
+6 pole  	50.126%
+7 road  	94.564%
+8 sidewalk	88.505%
+9 traffic sign	73.883%
+10 vegetation	61.439%
+11 vehicle	84.755%
+12 bridge	51.031%
+13 rider	27.195%
+14 sky  	95.717%
+----------     mean_IoU	67.873%	freq_IoU	79.370%	mean_pixel_acc	76.499%	pixel_acc	88.096%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-198.pth
+1 bike  	65.045%
+2 building	81.357%
+3 fence 	51.609%
+4 others	51.203%
+5 person	78.292%
+6 pole  	53.733%
+7 road  	94.984%
+8 sidewalk	89.411%
+9 traffic sign	73.940%
+10 vegetation	61.975%
+11 vehicle	83.515%
+12 bridge	52.469%
+13 rider	28.524%
+14 sky  	96.864%
+----------     mean_IoU	68.780%	freq_IoU	80.094%	mean_pixel_acc	77.165%	pixel_acc	88.580%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-324.pth
+1 bike  	66.528%
+2 building	81.641%
+3 fence 	52.584%
+4 others	56.000%
+5 person	80.698%
+6 pole  	60.179%
+7 road  	95.537%
+8 sidewalk	89.509%
+9 traffic sign	80.256%
+10 vegetation	63.105%
+11 vehicle	84.824%
+12 bridge	50.832%
+13 rider	28.701%
+14 sky  	96.212%
+----------     mean_IoU	70.472%	freq_IoU	80.894%	mean_pixel_acc	78.649%	pixel_acc	89.174%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-190.pth
+1 bike  	64.543%
+2 building	80.505%
+3 fence 	48.074%
+4 others	52.198%
+5 person	78.707%
+6 pole  	55.511%
+7 road  	94.999%
+8 sidewalk	89.274%
+9 traffic sign	75.726%
+10 vegetation	62.160%
+11 vehicle	83.170%
+12 bridge	48.945%
+13 rider	26.410%
+14 sky  	96.172%
+----------     mean_IoU	68.314%	freq_IoU	79.532%	mean_pixel_acc	76.727%	pixel_acc	88.299%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-488.pth
+1 bike  	66.960%
+2 building	83.456%
+3 fence 	53.744%
+4 others	58.308%
+5 person	82.233%
+6 pole  	63.734%
+7 road  	95.772%
+8 sidewalk	89.736%
+9 traffic sign	81.979%
+10 vegetation	63.929%
+11 vehicle	83.471%
+12 bridge	52.917%
+13 rider	30.960%
+14 sky  	97.169%
+----------     mean_IoU	71.741%	freq_IoU	81.806%	mean_pixel_acc	79.802%	pixel_acc	89.706%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-274.pth
+1 bike  	66.667%
+2 building	81.612%
+3 fence 	50.690%
+4 others	53.870%
+5 person	80.063%
+6 pole  	58.455%
+7 road  	95.290%
+8 sidewalk	89.401%
+9 traffic sign	76.374%
+10 vegetation	62.118%
+11 vehicle	86.178%
+12 bridge	51.374%
+13 rider	37.360%
+14 sky  	95.682%
+----------     mean_IoU	70.367%	freq_IoU	80.719%	mean_pixel_acc	79.236%	pixel_acc	88.994%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-352.pth
+1 bike  	66.242%
+2 building	82.714%
+3 fence 	53.014%
+4 others	58.998%
+5 person	80.501%
+6 pole  	61.038%
+7 road  	95.400%
+8 sidewalk	89.375%
+9 traffic sign	80.523%
+10 vegetation	62.616%
+11 vehicle	84.171%
+12 bridge	52.721%
+13 rider	28.330%
+14 sky  	96.727%
+----------     mean_IoU	70.884%	freq_IoU	81.259%	mean_pixel_acc	78.709%	pixel_acc	89.408%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-116.pth
+1 bike  	64.176%
+2 building	81.346%
+3 fence 	49.767%
+4 others	53.294%
+5 person	76.302%
+6 pole  	51.109%
+7 road  	94.151%
+8 sidewalk	87.702%
+9 traffic sign	72.405%
+10 vegetation	62.102%
+11 vehicle	83.700%
+12 bridge	55.452%
+13 rider	30.453%
+14 sky  	95.424%
+----------     mean_IoU	68.384%	freq_IoU	79.579%	mean_pixel_acc	77.874%	pixel_acc	88.206%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-242.pth
+1 bike  	65.503%
+2 building	81.667%
+3 fence 	53.237%
+4 others	56.099%
+5 person	79.759%
+6 pole  	58.298%
+7 road  	95.220%
+8 sidewalk	89.372%
+9 traffic sign	78.527%
+10 vegetation	62.223%
+11 vehicle	85.065%
+12 bridge	53.859%
+13 rider	28.797%
+14 sky  	96.558%
+----------     mean_IoU	70.299%	freq_IoU	80.859%	mean_pixel_acc	78.779%	pixel_acc	89.094%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-144.pth
+1 bike  	62.775%
+2 building	80.136%
+3 fence 	49.635%
+4 others	47.310%
+5 person	77.428%
+6 pole  	51.914%
+7 road  	94.628%
+8 sidewalk	88.866%
+9 traffic sign	74.751%
+10 vegetation	61.612%
+11 vehicle	83.929%
+12 bridge	48.089%
+13 rider	23.654%
+14 sky  	95.937%
+----------     mean_IoU	67.190%	freq_IoU	79.090%	mean_pixel_acc	75.984%	pixel_acc	87.923%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-404.pth
+1 bike  	66.657%
+2 building	83.417%
+3 fence 	53.883%
+4 others	57.577%
+5 person	81.319%
+6 pole  	60.361%
+7 road  	95.631%
+8 sidewalk	89.919%
+9 traffic sign	79.113%
+10 vegetation	63.230%
+11 vehicle	84.264%
+12 bridge	57.097%
+13 rider	26.038%
+14 sky  	96.835%
+----------     mean_IoU	71.096%	freq_IoU	81.793%	mean_pixel_acc	78.868%	pixel_acc	89.707%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-282.pth
+1 bike  	66.403%
+2 building	82.295%
+3 fence 	52.404%
+4 others	57.060%
+5 person	80.461%
+6 pole  	59.059%
+7 road  	95.419%
+8 sidewalk	89.478%
+9 traffic sign	78.282%
+10 vegetation	62.554%
+11 vehicle	85.582%
+12 bridge	55.380%
+13 rider	28.849%
+14 sky  	96.537%
+----------     mean_IoU	70.697%	freq_IoU	81.251%	mean_pixel_acc	79.215%	pixel_acc	89.309%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-408.pth
+1 bike  	66.706%
+2 building	82.603%
+3 fence 	52.868%
+4 others	56.963%
+5 person	81.029%
+6 pole  	62.808%
+7 road  	95.672%
+8 sidewalk	88.412%
+9 traffic sign	80.419%
+10 vegetation	63.370%
+11 vehicle	84.489%
+12 bridge	52.623%
+13 rider	27.641%
+14 sky  	97.025%
+----------     mean_IoU	70.902%	freq_IoU	81.232%	mean_pixel_acc	79.201%	pixel_acc	89.364%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-204.pth
+1 bike  	64.484%
+2 building	81.784%
+3 fence 	49.450%
+4 others	48.731%
+5 person	79.519%
+6 pole  	55.098%
+7 road  	94.965%
+8 sidewalk	87.847%
+9 traffic sign	74.962%
+10 vegetation	61.856%
+11 vehicle	82.257%
+12 bridge	53.316%
+13 rider	27.901%
+14 sky  	96.237%
+----------     mean_IoU	68.458%	freq_IoU	79.805%	mean_pixel_acc	77.036%	pixel_acc	88.476%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-450.pth
+1 bike  	66.824%
+2 building	83.155%
+3 fence 	52.380%
+4 others	58.110%
+5 person	82.453%
+6 pole  	63.929%
+7 road  	95.698%
+8 sidewalk	90.043%
+9 traffic sign	81.089%
+10 vegetation	63.848%
+11 vehicle	84.294%
+12 bridge	54.516%
+13 rider	32.796%
+14 sky  	97.075%
+----------     mean_IoU	71.872%	freq_IoU	81.817%	mean_pixel_acc	80.342%	pixel_acc	89.692%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-264.pth
+1 bike  	66.065%
+2 building	82.579%
+3 fence 	54.967%
+4 others	55.583%
+5 person	80.804%
+6 pole  	58.438%
+7 road  	95.260%
+8 sidewalk	89.291%
+9 traffic sign	77.832%
+10 vegetation	63.234%
+11 vehicle	83.486%
+12 bridge	53.179%
+13 rider	29.705%
+14 sky  	96.664%
+----------     mean_IoU	70.506%	freq_IoU	81.125%	mean_pixel_acc	79.067%	pixel_acc	89.229%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-294.pth
+1 bike  	66.350%
+2 building	81.831%
+3 fence 	52.418%
+4 others	56.852%
+5 person	80.690%
+6 pole  	59.857%
+7 road  	95.422%
+8 sidewalk	89.245%
+9 traffic sign	78.022%
+10 vegetation	62.019%
+11 vehicle	84.975%
+12 bridge	51.882%
+13 rider	26.834%
+14 sky  	96.835%
+----------     mean_IoU	70.231%	freq_IoU	80.890%	mean_pixel_acc	78.348%	pixel_acc	89.150%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-168.pth
+1 bike  	64.510%
+2 building	81.829%
+3 fence 	51.445%
+4 others	53.315%
+5 person	78.836%
+6 pole  	53.434%
+7 road  	94.766%
+8 sidewalk	88.506%
+9 traffic sign	74.781%
+10 vegetation	61.947%
+11 vehicle	82.477%
+12 bridge	52.511%
+13 rider	32.351%
+14 sky  	96.170%
+----------     mean_IoU	69.063%	freq_IoU	80.040%	mean_pixel_acc	78.015%	pixel_acc	88.545%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-142.pth
+1 bike  	64.746%
+2 building	78.940%
+3 fence 	46.218%
+4 others	51.830%
+5 person	78.088%
+6 pole  	49.943%
+7 road  	94.501%
+8 sidewalk	86.881%
+9 traffic sign	73.189%
+10 vegetation	61.733%
+11 vehicle	86.937%
+12 bridge	50.580%
+13 rider	31.333%
+14 sky  	95.881%
+----------     mean_IoU	67.914%	freq_IoU	78.878%	mean_pixel_acc	76.805%	pixel_acc	87.823%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-490.pth
+1 bike  	66.731%
+2 building	83.063%
+3 fence 	53.230%
+4 others	58.182%
+5 person	81.509%
+6 pole  	62.191%
+7 road  	95.757%
+8 sidewalk	90.032%
+9 traffic sign	81.752%
+10 vegetation	63.395%
+11 vehicle	83.567%
+12 bridge	52.077%
+13 rider	27.582%
+14 sky  	96.977%
+----------     mean_IoU	71.146%	freq_IoU	81.548%	mean_pixel_acc	78.680%	pixel_acc	89.599%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-464.pth
+1 bike  	67.241%
+2 building	83.109%
+3 fence 	52.670%
+4 others	60.394%
+5 person	81.772%
+6 pole  	63.119%
+7 road  	95.738%
+8 sidewalk	90.084%
+9 traffic sign	81.709%
+10 vegetation	62.277%
+11 vehicle	83.684%
+12 bridge	52.490%
+13 rider	29.570%
+14 sky  	97.211%
+----------     mean_IoU	71.505%	freq_IoU	81.633%	mean_pixel_acc	79.171%	pixel_acc	89.632%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-310.pth
+1 bike  	65.462%
+2 building	82.454%
+3 fence 	54.525%
+4 others	57.973%
+5 person	81.114%
+6 pole  	59.500%
+7 road  	95.412%
+8 sidewalk	89.739%
+9 traffic sign	79.831%
+10 vegetation	62.937%
+11 vehicle	85.295%
+12 bridge	56.077%
+13 rider	29.267%
+14 sky  	96.572%
+----------     mean_IoU	71.154%	freq_IoU	81.529%	mean_pixel_acc	79.229%	pixel_acc	89.539%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-458.pth
+1 bike  	67.784%
+2 building	82.820%
+3 fence 	54.813%
+4 others	60.330%
+5 person	81.624%
+6 pole  	60.611%
+7 road  	95.701%
+8 sidewalk	90.201%
+9 traffic sign	82.820%
+10 vegetation	63.568%
+11 vehicle	84.447%
+12 bridge	52.156%
+13 rider	30.095%
+14 sky  	97.243%
+----------     mean_IoU	71.729%	freq_IoU	81.769%	mean_pixel_acc	79.441%	pixel_acc	89.712%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-416.pth
+1 bike  	66.676%
+2 building	83.147%
+3 fence 	52.659%
+4 others	57.880%
+5 person	81.383%
+6 pole  	62.845%
+7 road  	95.641%
+8 sidewalk	89.275%
+9 traffic sign	79.585%
+10 vegetation	63.834%
+11 vehicle	83.430%
+12 bridge	52.614%
+13 rider	28.130%
+14 sky  	96.683%
+----------     mean_IoU	70.984%	freq_IoU	81.410%	mean_pixel_acc	79.207%	pixel_acc	89.452%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-206.pth
+1 bike  	64.570%
+2 building	81.455%
+3 fence 	51.123%
+4 others	52.573%
+5 person	78.679%
+6 pole  	55.300%
+7 road  	95.041%
+8 sidewalk	89.189%
+9 traffic sign	75.901%
+10 vegetation	62.201%
+11 vehicle	82.600%
+12 bridge	50.301%
+13 rider	28.833%
+14 sky  	96.635%
+----------     mean_IoU	68.886%	freq_IoU	80.004%	mean_pixel_acc	77.594%	pixel_acc	88.550%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-430.pth
+1 bike  	67.264%
+2 building	82.775%
+3 fence 	51.347%
+4 others	57.808%
+5 person	81.306%
+6 pole  	63.143%
+7 road  	95.636%
+8 sidewalk	89.973%
+9 traffic sign	80.834%
+10 vegetation	63.574%
+11 vehicle	83.899%
+12 bridge	52.572%
+13 rider	28.486%
+14 sky  	97.118%
+----------     mean_IoU	71.124%	freq_IoU	81.400%	mean_pixel_acc	78.998%	pixel_acc	89.477%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-272.pth
+1 bike  	66.374%
+2 building	81.277%
+3 fence 	51.294%
+4 others	55.452%
+5 person	79.775%
+6 pole  	58.587%
+7 road  	95.249%
+8 sidewalk	89.631%
+9 traffic sign	77.835%
+10 vegetation	62.267%
+11 vehicle	83.537%
+12 bridge	46.454%
+13 rider	28.288%
+14 sky  	96.201%
+----------     mean_IoU	69.444%	freq_IoU	80.226%	mean_pixel_acc	77.919%	pixel_acc	88.741%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-222.pth
+1 bike  	62.226%
+2 building	81.178%
+3 fence 	51.095%
+4 others	51.545%
+5 person	79.350%
+6 pole  	57.518%
+7 road  	95.033%
+8 sidewalk	88.496%
+9 traffic sign	78.199%
+10 vegetation	61.715%
+11 vehicle	84.988%
+12 bridge	51.549%
+13 rider	29.656%
+14 sky  	95.896%
+----------     mean_IoU	69.175%	freq_IoU	80.113%	mean_pixel_acc	78.011%	pixel_acc	88.634%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-332.pth
+1 bike  	66.863%
+2 building	82.280%
+3 fence 	54.049%
+4 others	56.442%
+5 person	80.903%
+6 pole  	59.120%
+7 road  	95.491%
+8 sidewalk	88.829%
+9 traffic sign	79.717%
+10 vegetation	63.435%
+11 vehicle	84.315%
+12 bridge	51.416%
+13 rider	29.342%
+14 sky  	96.729%
+----------     mean_IoU	70.638%	freq_IoU	81.075%	mean_pixel_acc	78.751%	pixel_acc	89.280%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-112.pth
+1 bike  	64.004%
+2 building	80.160%
+3 fence 	45.666%
+4 others	51.740%
+5 person	77.312%
+6 pole  	49.165%
+7 road  	94.178%
+8 sidewalk	87.118%
+9 traffic sign	71.756%
+10 vegetation	60.391%
+11 vehicle	84.543%
+12 bridge	51.342%
+13 rider	30.659%
+14 sky  	96.220%
+----------     mean_IoU	67.447%	freq_IoU	78.819%	mean_pixel_acc	76.222%	pixel_acc	87.799%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-500.pth
+1 bike  	66.598%
+2 building	83.374%
+3 fence 	52.471%
+4 others	57.630%
+5 person	81.783%
+6 pole  	62.342%
+7 road  	95.705%
+8 sidewalk	89.703%
+9 traffic sign	81.507%
+10 vegetation	63.427%
+11 vehicle	83.166%
+12 bridge	53.664%
+13 rider	27.705%
+14 sky  	96.873%
+----------     mean_IoU	71.139%	freq_IoU	81.562%	mean_pixel_acc	78.716%	pixel_acc	89.600%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-394.pth
+1 bike  	67.645%
+2 building	83.149%
+3 fence 	53.456%
+4 others	56.926%
+5 person	80.948%
+6 pole  	62.859%
+7 road  	95.455%
+8 sidewalk	89.731%
+9 traffic sign	79.376%
+10 vegetation	63.329%
+11 vehicle	85.068%
+12 bridge	55.595%
+13 rider	28.013%
+14 sky  	96.894%
+----------     mean_IoU	71.317%	freq_IoU	81.708%	mean_pixel_acc	79.383%	pixel_acc	89.631%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-448.pth
+1 bike  	67.137%
+2 building	83.756%
+3 fence 	53.953%
+4 others	59.220%
+5 person	81.221%
+6 pole  	63.257%
+7 road  	95.628%
+8 sidewalk	89.985%
+9 traffic sign	80.635%
+10 vegetation	63.989%
+11 vehicle	84.033%
+12 bridge	56.053%
+13 rider	27.644%
+14 sky  	96.969%
+----------     mean_IoU	71.677%	freq_IoU	81.996%	mean_pixel_acc	79.929%	pixel_acc	89.808%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-270.pth
+1 bike  	66.197%
+2 building	81.581%
+3 fence 	52.521%
+4 others	54.134%
+5 person	79.688%
+6 pole  	58.785%
+7 road  	95.044%
+8 sidewalk	89.321%
+9 traffic sign	77.235%
+10 vegetation	61.882%
+11 vehicle	84.387%
+12 bridge	48.854%
+13 rider	28.110%
+14 sky  	96.655%
+----------     mean_IoU	69.600%	freq_IoU	80.435%	mean_pixel_acc	78.039%	pixel_acc	88.817%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-164.pth
+1 bike  	63.852%
+2 building	81.131%
+3 fence 	48.566%
+4 others	49.559%
+5 person	78.048%
+6 pole  	53.532%
+7 road  	94.748%
+8 sidewalk	88.481%
+9 traffic sign	74.042%
+10 vegetation	61.274%
+11 vehicle	82.399%
+12 bridge	52.708%
+13 rider	28.313%
+14 sky  	95.804%
+----------     mean_IoU	68.033%	freq_IoU	79.454%	mean_pixel_acc	76.428%	pixel_acc	88.256%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-254.pth
+1 bike  	66.043%
+2 building	83.162%
+3 fence 	52.134%
+4 others	58.157%
+5 person	79.723%
+6 pole  	56.047%
+7 road  	95.274%
+8 sidewalk	89.332%
+9 traffic sign	77.835%
+10 vegetation	62.898%
+11 vehicle	82.684%
+12 bridge	58.470%
+13 rider	29.468%
+14 sky  	96.102%
+----------     mean_IoU	70.523%	freq_IoU	81.192%	mean_pixel_acc	79.720%	pixel_acc	89.230%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-354.pth
+1 bike  	66.216%
+2 building	82.748%
+3 fence 	53.422%
+4 others	59.171%
+5 person	80.297%
+6 pole  	61.699%
+7 road  	95.404%
+8 sidewalk	89.475%
+9 traffic sign	78.915%
+10 vegetation	62.731%
+11 vehicle	84.745%
+12 bridge	55.185%
+13 rider	25.561%
+14 sky  	96.806%
+----------     mean_IoU	70.884%	freq_IoU	81.426%	mean_pixel_acc	78.522%	pixel_acc	89.503%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-378.pth
+1 bike  	65.851%
+2 building	83.296%
+3 fence 	51.364%
+4 others	56.569%
+5 person	79.674%
+6 pole  	57.380%
+7 road  	95.232%
+8 sidewalk	89.323%
+9 traffic sign	77.269%
+10 vegetation	61.848%
+11 vehicle	83.069%
+12 bridge	55.540%
+13 rider	27.030%
+14 sky  	96.908%
+----------     mean_IoU	70.025%	freq_IoU	81.048%	mean_pixel_acc	77.987%	pixel_acc	89.212%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-444.pth
+1 bike  	67.389%
+2 building	82.740%
+3 fence 	52.570%
+4 others	55.741%
+5 person	81.583%
+6 pole  	63.623%
+7 road  	95.656%
+8 sidewalk	90.120%
+9 traffic sign	80.356%
+10 vegetation	63.516%
+11 vehicle	83.386%
+12 bridge	51.627%
+13 rider	26.873%
+14 sky  	96.788%
+----------     mean_IoU	70.855%	freq_IoU	81.333%	mean_pixel_acc	78.807%	pixel_acc	89.442%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-182.pth
+1 bike  	63.840%
+2 building	81.112%
+3 fence 	48.768%
+4 others	52.263%
+5 person	78.691%
+6 pole  	54.331%
+7 road  	94.970%
+8 sidewalk	88.981%
+9 traffic sign	73.445%
+10 vegetation	61.709%
+11 vehicle	83.368%
+12 bridge	52.098%
+13 rider	27.047%
+14 sky  	96.283%
+----------     mean_IoU	68.350%	freq_IoU	79.769%	mean_pixel_acc	76.791%	pixel_acc	88.416%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-480.pth
+1 bike  	67.194%
+2 building	82.456%
+3 fence 	52.119%
+4 others	55.049%
+5 person	81.857%
+6 pole  	63.390%
+7 road  	95.737%
+8 sidewalk	89.626%
+9 traffic sign	81.666%
+10 vegetation	63.297%
+11 vehicle	83.949%
+12 bridge	51.230%
+13 rider	27.638%
+14 sky  	97.066%
+----------     mean_IoU	70.877%	freq_IoU	81.238%	mean_pixel_acc	78.545%	pixel_acc	89.400%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-482.pth
+1 bike  	67.143%
+2 building	82.357%
+3 fence 	50.701%
+4 others	58.242%
+5 person	81.868%
+6 pole  	62.905%
+7 road  	95.683%
+8 sidewalk	89.937%
+9 traffic sign	82.407%
+10 vegetation	63.628%
+11 vehicle	83.911%
+12 bridge	49.580%
+13 rider	28.135%
+14 sky  	97.209%
+----------     mean_IoU	70.979%	freq_IoU	81.196%	mean_pixel_acc	78.624%	pixel_acc	89.401%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-368.pth
+1 bike  	67.034%
+2 building	82.878%
+3 fence 	53.116%
+4 others	57.915%
+5 person	81.615%
+6 pole  	61.399%
+7 road  	95.578%
+8 sidewalk	89.412%
+9 traffic sign	80.775%
+10 vegetation	63.821%
+11 vehicle	84.037%
+12 bridge	54.342%
+13 rider	32.368%
+14 sky  	96.715%
+----------     mean_IoU	71.500%	freq_IoU	81.534%	mean_pixel_acc	79.767%	pixel_acc	89.524%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-432.pth
+1 bike  	68.122%
+2 building	82.754%
+3 fence 	52.569%
+4 others	58.339%
+5 person	81.578%
+6 pole  	62.883%
+7 road  	95.654%
+8 sidewalk	89.789%
+9 traffic sign	81.130%
+10 vegetation	63.136%
+11 vehicle	84.204%
+12 bridge	53.820%
+13 rider	26.369%
+14 sky  	96.922%
+----------     mean_IoU	71.234%	freq_IoU	81.521%	mean_pixel_acc	79.112%	pixel_acc	89.562%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-360.pth
+1 bike  	66.695%
+2 building	82.192%
+3 fence 	53.790%
+4 others	57.650%
+5 person	80.917%
+6 pole  	61.825%
+7 road  	95.578%
+8 sidewalk	89.841%
+9 traffic sign	80.330%
+10 vegetation	63.617%
+11 vehicle	84.684%
+12 bridge	50.746%
+13 rider	26.922%
+14 sky  	96.707%
+----------     mean_IoU	70.821%	freq_IoU	81.258%	mean_pixel_acc	78.851%	pixel_acc	89.378%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-156.pth
+1 bike  	64.880%
+2 building	80.661%
+3 fence 	48.278%
+4 others	51.026%
+5 person	78.449%
+6 pole  	50.913%
+7 road  	94.702%
+8 sidewalk	87.872%
+9 traffic sign	74.781%
+10 vegetation	62.559%
+11 vehicle	81.643%
+12 bridge	49.063%
+13 rider	30.379%
+14 sky  	96.577%
+----------     mean_IoU	67.984%	freq_IoU	79.147%	mean_pixel_acc	76.810%	pixel_acc	88.049%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-108.pth
+1 bike  	63.990%
+2 building	79.834%
+3 fence 	47.016%
+4 others	49.103%
+5 person	76.723%
+6 pole  	49.297%
+7 road  	94.016%
+8 sidewalk	87.606%
+9 traffic sign	68.870%
+10 vegetation	59.833%
+11 vehicle	84.213%
+12 bridge	49.037%
+13 rider	30.595%
+14 sky  	96.006%
+----------     mean_IoU	66.867%	freq_IoU	78.546%	mean_pixel_acc	75.578%	pixel_acc	87.584%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-304.pth
+1 bike  	66.747%
+2 building	82.334%
+3 fence 	53.792%
+4 others	56.598%
+5 person	80.530%
+6 pole  	59.914%
+7 road  	95.367%
+8 sidewalk	89.354%
+9 traffic sign	77.703%
+10 vegetation	62.465%
+11 vehicle	85.208%
+12 bridge	54.201%
+13 rider	28.105%
+14 sky  	96.652%
+----------     mean_IoU	70.641%	freq_IoU	81.232%	mean_pixel_acc	78.708%	pixel_acc	89.368%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-478.pth
+1 bike  	67.314%
+2 building	83.179%
+3 fence 	52.982%
+4 others	57.726%
+5 person	82.469%
+6 pole  	62.377%
+7 road  	95.740%
+8 sidewalk	90.109%
+9 traffic sign	80.860%
+10 vegetation	63.383%
+11 vehicle	83.574%
+12 bridge	54.167%
+13 rider	29.269%
+14 sky  	97.168%
+----------     mean_IoU	71.451%	freq_IoU	81.719%	mean_pixel_acc	79.144%	pixel_acc	89.656%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-178.pth
+1 bike  	64.847%
+2 building	81.500%
+3 fence 	50.789%
+4 others	52.662%
+5 person	78.437%
+6 pole  	53.046%
+7 road  	94.867%
+8 sidewalk	88.355%
+9 traffic sign	75.552%
+10 vegetation	61.786%
+11 vehicle	83.479%
+12 bridge	50.497%
+13 rider	24.612%
+14 sky  	96.609%
+----------     mean_IoU	68.360%	freq_IoU	79.860%	mean_pixel_acc	76.947%	pixel_acc	88.471%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-226.pth
+1 bike  	65.467%
+2 building	80.055%
+3 fence 	50.204%
+4 others	53.099%
+5 person	79.766%
+6 pole  	56.020%
+7 road  	95.057%
+8 sidewalk	88.990%
+9 traffic sign	74.832%
+10 vegetation	61.103%
+11 vehicle	84.733%
+12 bridge	50.481%
+13 rider	32.953%
+14 sky  	95.859%
+----------     mean_IoU	69.187%	freq_IoU	79.797%	mean_pixel_acc	77.312%	pixel_acc	88.465%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-232.pth
+1 bike  	66.132%
+2 building	82.518%
+3 fence 	51.815%
+4 others	55.828%
+5 person	79.445%
+6 pole  	55.885%
+7 road  	95.172%
+8 sidewalk	89.077%
+9 traffic sign	76.063%
+10 vegetation	62.252%
+11 vehicle	84.687%
+12 bridge	56.691%
+13 rider	30.298%
+14 sky  	96.006%
+----------     mean_IoU	70.133%	freq_IoU	80.953%	mean_pixel_acc	79.113%	pixel_acc	89.092%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-194.pth
+1 bike  	64.118%
+2 building	81.298%
+3 fence 	50.187%
+4 others	53.261%
+5 person	78.458%
+6 pole  	56.743%
+7 road  	95.015%
+8 sidewalk	88.839%
+9 traffic sign	76.622%
+10 vegetation	61.089%
+11 vehicle	84.118%
+12 bridge	51.769%
+13 rider	27.390%
+14 sky  	96.135%
+----------     mean_IoU	68.932%	freq_IoU	80.021%	mean_pixel_acc	77.668%	pixel_acc	88.534%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-474.pth
+1 bike  	67.622%
+2 building	83.441%
+3 fence 	52.759%
+4 others	57.806%
+5 person	81.888%
+6 pole  	63.194%
+7 road  	95.700%
+8 sidewalk	89.809%
+9 traffic sign	82.125%
+10 vegetation	63.212%
+11 vehicle	83.991%
+12 bridge	54.504%
+13 rider	28.290%
+14 sky  	97.010%
+----------     mean_IoU	71.525%	freq_IoU	81.775%	mean_pixel_acc	79.661%	pixel_acc	89.680%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-442.pth
+1 bike  	66.781%
+2 building	82.563%
+3 fence 	52.547%
+4 others	58.720%
+5 person	81.656%
+6 pole  	62.734%
+7 road  	95.642%
+8 sidewalk	89.461%
+9 traffic sign	80.324%
+10 vegetation	64.320%
+11 vehicle	84.221%
+12 bridge	52.279%
+13 rider	26.338%
+14 sky  	97.178%
+----------     mean_IoU	71.054%	freq_IoU	81.399%	mean_pixel_acc	78.909%	pixel_acc	89.489%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-158.pth
+1 bike  	64.309%
+2 building	81.662%
+3 fence 	50.448%
+4 others	53.022%
+5 person	77.743%
+6 pole  	52.005%
+7 road  	94.520%
+8 sidewalk	88.651%
+9 traffic sign	74.560%
+10 vegetation	62.709%
+11 vehicle	81.879%
+12 bridge	52.293%
+13 rider	24.741%
+14 sky  	95.084%
+----------     mean_IoU	68.116%	freq_IoU	79.677%	mean_pixel_acc	77.222%	pixel_acc	88.349%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-230.pth
+1 bike  	65.253%
+2 building	80.913%
+3 fence 	51.171%
+4 others	52.718%
+5 person	79.483%
+6 pole  	57.134%
+7 road  	95.169%
+8 sidewalk	89.265%
+9 traffic sign	75.437%
+10 vegetation	62.014%
+11 vehicle	82.925%
+12 bridge	49.622%
+13 rider	26.076%
+14 sky  	96.141%
+----------     mean_IoU	68.809%	freq_IoU	79.929%	mean_pixel_acc	76.883%	pixel_acc	88.561%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-162.pth
+1 bike  	64.090%
+2 building	80.395%
+3 fence 	48.645%
+4 others	51.945%
+5 person	77.525%
+6 pole  	52.995%
+7 road  	94.737%
+8 sidewalk	88.833%
+9 traffic sign	75.061%
+10 vegetation	61.552%
+11 vehicle	82.777%
+12 bridge	47.121%
+13 rider	28.371%
+14 sky  	96.206%
+----------     mean_IoU	67.875%	freq_IoU	79.181%	mean_pixel_acc	76.386%	pixel_acc	88.042%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-174.pth
+1 bike  	64.738%
+2 building	81.542%
+3 fence 	50.481%
+4 others	52.292%
+5 person	78.900%
+6 pole  	54.034%
+7 road  	94.836%
+8 sidewalk	88.301%
+9 traffic sign	75.319%
+10 vegetation	61.299%
+11 vehicle	83.281%
+12 bridge	52.576%
+13 rider	32.314%
+14 sky  	95.819%
+----------     mean_IoU	68.981%	freq_IoU	79.936%	mean_pixel_acc	77.995%	pixel_acc	88.489%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-138.pth
+1 bike  	64.573%
+2 building	79.782%
+3 fence 	50.014%
+4 others	48.628%
+5 person	77.782%
+6 pole  	51.499%
+7 road  	94.461%
+8 sidewalk	88.540%
+9 traffic sign	73.389%
+10 vegetation	61.290%
+11 vehicle	85.497%
+12 bridge	51.557%
+13 rider	27.088%
+14 sky  	95.713%
+----------     mean_IoU	67.844%	freq_IoU	79.291%	mean_pixel_acc	76.551%	pixel_acc	88.063%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-256.pth
+1 bike  	65.639%
+2 building	81.250%
+3 fence 	52.843%
+4 others	55.390%
+5 person	80.925%
+6 pole  	57.217%
+7 road  	95.273%
+8 sidewalk	89.531%
+9 traffic sign	78.566%
+10 vegetation	63.047%
+11 vehicle	84.552%
+12 bridge	52.375%
+13 rider	35.557%
+14 sky  	96.848%
+----------     mean_IoU	70.644%	freq_IoU	80.767%	mean_pixel_acc	78.885%	pixel_acc	89.052%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-438.pth
+1 bike  	66.634%
+2 building	83.098%
+3 fence 	52.243%
+4 others	57.281%
+5 person	81.809%
+6 pole  	62.640%
+7 road  	95.622%
+8 sidewalk	89.594%
+9 traffic sign	81.808%
+10 vegetation	63.471%
+11 vehicle	83.858%
+12 bridge	54.927%
+13 rider	28.020%
+14 sky  	97.009%
+----------     mean_IoU	71.287%	freq_IoU	81.572%	mean_pixel_acc	79.009%	pixel_acc	89.602%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-224.pth
+1 bike  	63.966%
+2 building	81.764%
+3 fence 	52.692%
+4 others	54.881%
+5 person	81.211%
+6 pole  	54.894%
+7 road  	95.057%
+8 sidewalk	88.665%
+9 traffic sign	76.536%
+10 vegetation	62.275%
+11 vehicle	84.882%
+12 bridge	56.835%
+13 rider	37.752%
+14 sky  	96.303%
+----------     mean_IoU	70.551%	freq_IoU	80.831%	mean_pixel_acc	79.415%	pixel_acc	89.033%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-208.pth
+1 bike  	65.286%
+2 building	82.063%
+3 fence 	51.075%
+4 others	54.459%
+5 person	79.378%
+6 pole  	55.906%
+7 road  	94.937%
+8 sidewalk	89.252%
+9 traffic sign	74.104%
+10 vegetation	61.671%
+11 vehicle	83.013%
+12 bridge	54.360%
+13 rider	29.637%
+14 sky  	96.016%
+----------     mean_IoU	69.368%	freq_IoU	80.402%	mean_pixel_acc	77.860%	pixel_acc	88.808%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-330.pth
+1 bike  	67.084%
+2 building	82.465%
+3 fence 	51.766%
+4 others	55.349%
+5 person	80.991%
+6 pole  	60.894%
+7 road  	95.535%
+8 sidewalk	89.110%
+9 traffic sign	78.811%
+10 vegetation	62.727%
+11 vehicle	84.376%
+12 bridge	54.605%
+13 rider	27.386%
+14 sky  	96.827%
+----------     mean_IoU	70.566%	freq_IoU	81.137%	mean_pixel_acc	78.697%	pixel_acc	89.323%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-446.pth
+1 bike  	67.166%
+2 building	82.937%
+3 fence 	52.188%
+4 others	58.693%
+5 person	81.645%
+6 pole  	63.126%
+7 road  	95.718%
+8 sidewalk	89.897%
+9 traffic sign	81.497%
+10 vegetation	63.670%
+11 vehicle	83.480%
+12 bridge	52.751%
+13 rider	28.736%
+14 sky  	97.296%
+----------     mean_IoU	71.343%	freq_IoU	81.522%	mean_pixel_acc	79.305%	pixel_acc	89.527%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-348.pth
+1 bike  	67.053%
+2 building	82.516%
+3 fence 	53.716%
+4 others	56.904%
+5 person	80.576%
+6 pole  	62.188%
+7 road  	95.411%
+8 sidewalk	89.896%
+9 traffic sign	79.455%
+10 vegetation	63.166%
+11 vehicle	84.384%
+12 bridge	53.773%
+13 rider	28.694%
+14 sky  	96.240%
+----------     mean_IoU	70.998%	freq_IoU	81.348%	mean_pixel_acc	79.470%	pixel_acc	89.382%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-484.pth
+1 bike  	66.797%
+2 building	83.550%
+3 fence 	53.159%
+4 others	58.647%
+5 person	81.574%
+6 pole  	64.330%
+7 road  	95.712%
+8 sidewalk	89.783%
+9 traffic sign	81.864%
+10 vegetation	63.864%
+11 vehicle	83.722%
+12 bridge	55.144%
+13 rider	27.399%
+14 sky  	97.088%
+----------     mean_IoU	71.617%	freq_IoU	81.851%	mean_pixel_acc	79.654%	pixel_acc	89.744%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-400.pth
+1 bike  	66.674%
+2 building	82.837%
+3 fence 	53.849%
+4 others	56.976%
+5 person	81.734%
+6 pole  	62.046%
+7 road  	95.685%
+8 sidewalk	89.949%
+9 traffic sign	79.431%
+10 vegetation	63.521%
+11 vehicle	85.197%
+12 bridge	53.363%
+13 rider	30.918%
+14 sky  	97.004%
+----------     mean_IoU	71.370%	freq_IoU	81.686%	mean_pixel_acc	79.371%	pixel_acc	89.606%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-424.pth
+1 bike  	67.211%
+2 building	83.424%
+3 fence 	54.769%
+4 others	57.982%
+5 person	81.189%
+6 pole  	62.131%
+7 road  	95.706%
+8 sidewalk	90.064%
+9 traffic sign	77.941%
+10 vegetation	62.809%
+11 vehicle	84.927%
+12 bridge	57.816%
+13 rider	25.096%
+14 sky  	97.013%
+----------     mean_IoU	71.291%	freq_IoU	81.979%	mean_pixel_acc	80.063%	pixel_acc	89.766%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-318.pth
+1 bike  	66.447%
+2 building	81.817%
+3 fence 	53.656%
+4 others	57.852%
+5 person	80.541%
+6 pole  	59.338%
+7 road  	95.480%
+8 sidewalk	89.453%
+9 traffic sign	79.735%
+10 vegetation	63.067%
+11 vehicle	86.050%
+12 bridge	51.910%
+13 rider	28.193%
+14 sky  	96.638%
+----------     mean_IoU	70.727%	freq_IoU	81.174%	mean_pixel_acc	78.984%	pixel_acc	89.312%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-292.pth
+1 bike  	65.894%
+2 building	81.677%
+3 fence 	52.120%
+4 others	55.921%
+5 person	80.734%
+6 pole  	59.935%
+7 road  	95.291%
+8 sidewalk	89.198%
+9 traffic sign	77.556%
+10 vegetation	62.586%
+11 vehicle	84.400%
+12 bridge	52.671%
+13 rider	26.996%
+14 sky  	96.548%
+----------     mean_IoU	70.109%	freq_IoU	80.753%	mean_pixel_acc	78.069%	pixel_acc	89.064%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-374.pth
+1 bike  	66.855%
+2 building	82.625%
+3 fence 	55.354%
+4 others	57.337%
+5 person	81.144%
+6 pole  	63.157%
+7 road  	95.548%
+8 sidewalk	89.985%
+9 traffic sign	80.677%
+10 vegetation	64.208%
+11 vehicle	84.975%
+12 bridge	51.813%
+13 rider	26.192%
+14 sky  	96.878%
+----------     mean_IoU	71.196%	freq_IoU	81.607%	mean_pixel_acc	79.331%	pixel_acc	89.595%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-104.pth
+1 bike  	63.887%
+2 building	81.060%
+3 fence 	46.648%
+4 others	51.752%
+5 person	76.439%
+6 pole  	48.361%
+7 road  	94.052%
+8 sidewalk	87.982%
+9 traffic sign	71.734%
+10 vegetation	60.793%
+11 vehicle	82.797%
+12 bridge	54.064%
+13 rider	29.987%
+14 sky  	95.786%
+----------     mean_IoU	67.524%	freq_IoU	79.072%	mean_pixel_acc	77.061%	pixel_acc	87.877%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-434.pth
+1 bike  	66.555%
+2 building	83.277%
+3 fence 	53.838%
+4 others	59.470%
+5 person	81.548%
+6 pole  	61.833%
+7 road  	95.598%
+8 sidewalk	88.939%
+9 traffic sign	80.453%
+10 vegetation	64.064%
+11 vehicle	83.951%
+12 bridge	55.161%
+13 rider	27.272%
+14 sky  	97.076%
+----------     mean_IoU	71.360%	freq_IoU	81.668%	mean_pixel_acc	79.483%	pixel_acc	89.625%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-328.pth
+1 bike  	67.553%
+2 building	82.907%
+3 fence 	53.483%
+4 others	57.276%
+5 person	80.643%
+6 pole  	60.821%
+7 road  	95.395%
+8 sidewalk	88.730%
+9 traffic sign	78.979%
+10 vegetation	63.222%
+11 vehicle	84.326%
+12 bridge	53.500%
+13 rider	28.898%
+14 sky  	96.819%
+----------     mean_IoU	70.897%	freq_IoU	81.302%	mean_pixel_acc	79.611%	pixel_acc	89.398%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-440.pth
+1 bike  	67.152%
+2 building	82.924%
+3 fence 	53.460%
+4 others	58.229%
+5 person	81.347%
+6 pole  	62.870%
+7 road  	95.663%
+8 sidewalk	89.788%
+9 traffic sign	81.133%
+10 vegetation	64.203%
+11 vehicle	85.152%
+12 bridge	55.074%
+13 rider	26.519%
+14 sky  	97.065%
+----------     mean_IoU	71.470%	freq_IoU	81.777%	mean_pixel_acc	79.319%	pixel_acc	89.710%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-188.pth
+1 bike  	64.596%
+2 building	81.905%
+3 fence 	51.618%
+4 others	53.192%
+5 person	78.701%
+6 pole  	54.914%
+7 road  	94.963%
+8 sidewalk	89.108%
+9 traffic sign	76.174%
+10 vegetation	61.807%
+11 vehicle	83.753%
+12 bridge	53.059%
+13 rider	29.061%
+14 sky  	96.489%
+----------     mean_IoU	69.238%	freq_IoU	80.347%	mean_pixel_acc	78.110%	pixel_acc	88.697%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-334.pth
+1 bike  	66.496%
+2 building	82.852%
+3 fence 	53.268%
+4 others	57.460%
+5 person	80.699%
+6 pole  	59.625%
+7 road  	95.507%
+8 sidewalk	89.197%
+9 traffic sign	78.404%
+10 vegetation	63.291%
+11 vehicle	83.863%
+12 bridge	54.186%
+13 rider	27.836%
+14 sky  	96.760%
+----------     mean_IoU	70.675%	freq_IoU	81.287%	mean_pixel_acc	79.001%	pixel_acc	89.363%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-250.pth
+1 bike  	64.736%
+2 building	82.505%
+3 fence 	53.709%
+4 others	56.872%
+5 person	81.344%
+6 pole  	57.010%
+7 road  	95.041%
+8 sidewalk	88.843%
+9 traffic sign	77.992%
+10 vegetation	62.842%
+11 vehicle	84.252%
+12 bridge	55.344%
+13 rider	34.339%
+14 sky  	96.372%
+----------     mean_IoU	70.800%	freq_IoU	81.119%	mean_pixel_acc	79.960%	pixel_acc	89.174%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-414.pth
+1 bike  	67.062%
+2 building	83.055%
+3 fence 	52.305%
+4 others	56.771%
+5 person	81.299%
+6 pole  	63.086%
+7 road  	95.665%
+8 sidewalk	90.111%
+9 traffic sign	80.112%
+10 vegetation	63.517%
+11 vehicle	83.826%
+12 bridge	53.284%
+13 rider	28.481%
+14 sky  	96.687%
+----------     mean_IoU	71.090%	freq_IoU	81.515%	mean_pixel_acc	79.511%	pixel_acc	89.515%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-278.pth
+1 bike  	66.254%
+2 building	82.119%
+3 fence 	53.223%
+4 others	56.463%
+5 person	81.083%
+6 pole  	57.688%
+7 road  	95.278%
+8 sidewalk	89.705%
+9 traffic sign	77.617%
+10 vegetation	62.497%
+11 vehicle	85.218%
+12 bridge	53.461%
+13 rider	39.018%
+14 sky  	95.958%
+----------     mean_IoU	71.113%	freq_IoU	81.173%	mean_pixel_acc	79.810%	pixel_acc	89.249%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-468.pth
+1 bike  	66.805%
+2 building	83.562%
+3 fence 	53.112%
+4 others	59.684%
+5 person	82.072%
+6 pole  	64.016%
+7 road  	95.733%
+8 sidewalk	89.622%
+9 traffic sign	81.874%
+10 vegetation	63.877%
+11 vehicle	84.006%
+12 bridge	55.937%
+13 rider	29.283%
+14 sky  	97.159%
+----------     mean_IoU	71.910%	freq_IoU	81.959%	mean_pixel_acc	80.462%	pixel_acc	89.777%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-376.pth
+1 bike  	67.122%
+2 building	82.196%
+3 fence 	53.396%
+4 others	56.205%
+5 person	81.533%
+6 pole  	60.018%
+7 road  	95.603%
+8 sidewalk	89.300%
+9 traffic sign	78.777%
+10 vegetation	62.740%
+11 vehicle	84.520%
+12 bridge	51.105%
+13 rider	33.909%
+14 sky  	97.329%
+----------     mean_IoU	70.982%	freq_IoU	81.171%	mean_pixel_acc	78.674%	pixel_acc	89.332%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-110.pth
+1 bike  	63.302%
+2 building	79.852%
+3 fence 	46.105%
+4 others	47.936%
+5 person	76.680%
+6 pole  	47.834%
+7 road  	93.995%
+8 sidewalk	87.742%
+9 traffic sign	69.936%
+10 vegetation	60.319%
+11 vehicle	83.919%
+12 bridge	50.588%
+13 rider	26.382%
+14 sky  	96.297%
+----------     mean_IoU	66.492%	freq_IoU	78.492%	mean_pixel_acc	74.985%	pixel_acc	87.591%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-476.pth
+1 bike  	67.523%
+2 building	83.337%
+3 fence 	52.837%
+4 others	58.636%
+5 person	82.357%
+6 pole  	63.651%
+7 road  	95.755%
+8 sidewalk	89.922%
+9 traffic sign	82.257%
+10 vegetation	63.909%
+11 vehicle	84.040%
+12 bridge	52.827%
+13 rider	31.770%
+14 sky  	97.354%
+----------     mean_IoU	71.870%	freq_IoU	81.836%	mean_pixel_acc	80.045%	pixel_acc	89.744%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-372.pth
+1 bike  	67.071%
+2 building	82.102%
+3 fence 	51.421%
+4 others	57.021%
+5 person	80.999%
+6 pole  	62.765%
+7 road  	95.628%
+8 sidewalk	89.935%
+9 traffic sign	81.140%
+10 vegetation	63.138%
+11 vehicle	84.979%
+12 bridge	53.344%
+13 rider	27.707%
+14 sky  	96.789%
+----------     mean_IoU	71.003%	freq_IoU	81.266%	mean_pixel_acc	79.357%	pixel_acc	89.360%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-124.pth
+1 bike  	63.475%
+2 building	79.547%
+3 fence 	49.446%
+4 others	51.504%
+5 person	77.248%
+6 pole  	50.438%
+7 road  	94.294%
+8 sidewalk	88.616%
+9 traffic sign	71.875%
+10 vegetation	62.232%
+11 vehicle	85.030%
+12 bridge	48.970%
+13 rider	31.446%
+14 sky  	96.159%
+----------     mean_IoU	67.877%	freq_IoU	79.097%	mean_pixel_acc	76.858%	pixel_acc	87.905%
+Model: /root/autodl-tmp/LFSOD/bestlf/log_NYUDepthv2_mit_b0/checkpoint/epoch-186.pth
+1 bike  	63.588%
+2 building	80.862%
+3 fence 	48.986%
+4 others	51.067%
+5 person	78.970%
+6 pole  	54.922%
+7 road  	94.920%
+8 sidewalk	89.093%
+9 traffic sign	74.738%
+10 vegetation	61.665%
+11 vehicle	82.390%
+12 bridge	49.223%
+13 rider	25.198%
+14 sky  	96.729%
+----------     mean_IoU	68.025%	freq_IoU	79.519%	mean_pixel_acc	76.405%	pixel_acc	88.260%

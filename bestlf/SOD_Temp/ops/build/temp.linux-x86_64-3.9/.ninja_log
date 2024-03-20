@@ -1,0 +1,4 @@
+# ninja log v5
+0	1736	1699262500917155451	/media/tf/HDisk/Pfolder/PyProj/LFU/第二次/Code/models/ops/build/temp.linux-x86_64-3.9/media/tf/HDisk/Pfolder/PyProj/LFU/第二次/Code/models/ops/src/cpu/ms_deform_attn_cpu.o	b4fb2a7ddb289356
+0	6548	1699262505724486222	/media/tf/HDisk/Pfolder/PyProj/LFU/第二次/Code/models/ops/build/temp.linux-x86_64-3.9/media/tf/HDisk/Pfolder/PyProj/LFU/第二次/Code/models/ops/src/cuda/ms_deform_attn_cuda.o	fbc7a0f17df54f11
+0	7814	1699262506992313359	/media/tf/HDisk/Pfolder/PyProj/LFU/第二次/Code/models/ops/build/temp.linux-x86_64-3.9/media/tf/HDisk/Pfolder/PyProj/LFU/第二次/Code/models/ops/src/vision.o	3508d2d780996a72
