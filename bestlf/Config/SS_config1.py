@@ -98,8 +98,8 @@ C.eval_flip = False # True #
 C.eval_crop_size = [480, 640] # [height weight]
 
 """Store Config"""
-C.checkpoint_start_epoch = 100
-C.checkpoint_step = 2
+C.checkpoint_start_epoch = 0
+C.checkpoint_step = 1
 
 """Path Config"""
 def add_path(path):
@@ -107,7 +107,7 @@ def add_path(path):
         sys.path.insert(0, path)
 add_path(osp.join(C.root_dir))
 
-C.log_dir = osp.abspath('log_' + C.dataset_name + '_' + C.backbone)
+C.log_dir = osp.abspath('log/SS_log/log_' + C.dataset_name + '_' + C.backbone)
 C.tb_dir = osp.abspath(osp.join(C.log_dir, "tb"))
 C.log_dir_link = C.log_dir
 C.checkpoint_dir = osp.abspath(osp.join(C.log_dir, "checkpoint"))
@@ -115,7 +115,7 @@ C.checkpoint_dir = osp.abspath(osp.join(C.log_dir, "checkpoint"))
 exp_time = time.strftime('%Y_%m_%d_%H_%M_%S', time.localtime())
 C.log_file = C.log_dir + '/log_' + exp_time + '.log'
 C.link_log_file = C.log_file + '/log_last.log'
-C.val_log_file = C.log_dir + '/val_' + exp_time + '.log'
+C.val_log_file = C.log_dir + '/val_' +  '.log'
 C.link_val_log_file = C.log_dir + '/val_last.log'
 
 if __name__ == '__main__':
