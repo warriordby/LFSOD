@@ -1,0 +1,102 @@
+# MODEL:
+seed                       : 3407
+backbone                   : afformer_base
+pretrained_model           : null
+decoder                    : MLPDecoder
+decoder_embed_dim          : 512
+
+
+# DATASET:
+dataset_name               : NYUDepthv2
+dataset_path               : /root/autodl-tmp/syn/Syn/datasets/NYUDepthv2
+
+rgb_root_folder            : /root/autodl-tmp/syn/Syn/View/V55
+rgb_format                 : .png
+
+rgb_view_path              : /root/autodl-tmp/syn/Syn/View
+rgb_view_format            : .png
+view_list                  : /root/autodl-tmp/SS/syn8/viewlist.txt
+
+gt_root_folder             : /root/autodl-tmp/syn/Syn/Label
+gt_format                  : .png
+gt_transform               : true
+
+x_root_folder              : /root/autodl-tmp/syn/Syn/View/V11
+x_format                   : .png
+x_is_single_channel        : false
+
+is_test                    : false
+num_train_imgs             : 172
+
+
+class_names                :
+  - bike
+  - building
+  - fence
+  - others
+  - person
+  - pole
+  - road
+  - sidewalk
+  - traffic sign
+  - vegetation
+  - vehicle
+  - bridge
+  - rider
+  - sky
+background                 : 255
+image_height               : 480
+image_width                : 640
+norm_mean                  : [0.485, 0.456, 0.406]
+norm_std                   : [0.229, 0.224, 0.225]
+
+
+# TRAIN:
+batch_size                 : 15
+
+nepochs                    : 500
+niters_per_epoch           : 12
+
+num_workers                : 8
+train_scale_array          : [0.5, 0.75, 1, 1.25, 1.5, 1.75]
+warm_up_epoch              : 10
+fix_bias                   : true
+
+bn_eps                     : 0.001
+bn_momentum                : 0.1
+
+checkpoint_start_epoch     : 0
+checkpoint_step            : 1
+
+train_source               : /root/autodl-tmp/syn/Train_list.txt
+
+
+# EVAL:
+eval_iter                  : 25
+eval_stride_rate           : 0.6666666666666666
+eval_scale_array           : [1]
+eval_flip                  : false
+eval_crop_size             : [480, 640]
+eval_source                : /root/autodl-tmp/syn/Val_list.txt
+
+num_eval_imgs              : 28
+num_classes                : 14
+
+
+# OPTIMIZER:
+optimizer                  : AdamW 
+lr                         : 0.00006 #6e-5
+lr_power                   : 0.9
+momentum                   : 0.9
+weight_decay               : 0.01
+
+
+# Path :
+log_dir: log/SS_log/log_NYUDepthv2_agent_pvt
+tb_dir: log/SS_log/log_NYUDepthv2_agent_pvt/tb
+log_dir_link: log/SS_log/log_NYUDepthv2_agent_pvt
+checkpoint_dir: log/SS_log/log_NYUDepthv2_agent_pvt/checkpoint
+log_file: log/SS_log/log_NYUDepthv2_agent_pvt/log_2024_04_03_12_00_00.log
+link_log_file: log/SS_log/log_NYUDepthv2_agent_pvt/log_2024_04_03_12_00_00.log/log_last.log
+val_log_file: log/SS_log/log_NYUDepthv2_agent_pvt/val_.log
+link_val_log_file: log/SS_log/log_NYUDepthv2_agent_pvt/val_last.log

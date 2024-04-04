@@ -14,9 +14,9 @@ from torch.nn.parallel import DistributedDataParallel
 from Dataloader.SODdataloader import test_dataset, SalObjDataset
 from Builder.SOD_Builder import model
 from Config.SOD_options import opt
-from Network_utils.utils import clip_gradient, adjust_lr
+from SOD_Network_utils.utils import clip_gradient, adjust_lr
 
-from Network_utils.train import (
+from SOD_Network_utils.train import (
     print_network,
     setup_logging,
     load_pretrained_weights,
@@ -29,11 +29,14 @@ from Network_utils.train import (
     log_and_save
 )
 
+
 from Dataloader.mixup import mixup_images as mi
 from Dataloader.mixup import mixup_images2 as mi2
 
 def train(train_loader, model, optimizer, epoch, save_path):
     #global step
+    if not os.path.exists(save_path):
+        os.mkdir(save_path)
     model.train()
     loss_all = 0
     epoch_step = 0
@@ -44,6 +47,7 @@ def train(train_loader, model, optimizer, epoch, save_path):
             gts, gts1, gts2, gts3, gts4, focal, images,focal_stack = preprocess_tensors(gts, focal, images)
             images,focal_stack = mi2(images,focal_stack)
             out,out1,out2,out3,out4= model(images)
+            # out= model(images)
             loss = structure_loss(out, gts)+structure_loss(out1, gts1)+structure_loss(out2, gts2)+structure_loss(out3, gts3)+structure_loss(out4, gts4)
             loss.backward()            
             clip_gradient(optimizer, opt.clip) # 梯度裁剪
@@ -72,7 +76,7 @@ def train(train_loader, model, optimizer, epoch, save_path):
 
 def test(test_loader, model, epoch, save_path,optimizer):
     global best_mae, best_epoch
-    model.eval()
+    model.eval()#评估模式
     with torch.no_grad():
         mae_sum = 0
         for i in range(test_loader.size):
@@ -82,6 +86,7 @@ def test(test_loader, model, epoch, save_path,optimizer):
             #image torch.Size([1, 3, 256, 256])
             #focal torch.Size([12, 3, 256, 256])
             out,out1,out2,out3,out4 = model(image)
+            # out= model(image)
             mae_sum += compute_mae(out, gt)
 
         mae = mae_sum / test_loader.size
@@ -91,6 +96,7 @@ def test(test_loader, model, epoch, save_path,optimizer):
 
 
 if __name__ == '__main__':
+####################也不管
     logging.info("Start train...")      
     if opt.DDP == True: 
         local_rank = int(os.environ.get("LOCAL_RANK", 0))                         
@@ -105,7 +111,9 @@ if __name__ == '__main__':
     model = model() 
     params = model.parameters()
     optimizer = torch.optim.AdamW(params, opt.lr, weight_decay=1e-4)
-    if opt.resume == False:
+    
+#############先不管
+    if opt.resume == False:  
         start_epoch = 0
         load_pretrained_weights(model, opt)
           #weight_decay正则化系数
@@ -120,9 +128,10 @@ if __name__ == '__main__':
         optimizer.load_state_dict(checkpoint['optimizer_state_dict'])  #weight_decay正则化系数
         start_epoch = checkpoint['epoch']
         print('Resume:  start_epoch{}'.format(start_epoch))
+
     model.cuda() 
     if not opt.DDP or dist.get_rank() == 0:
-        model_params = print_network(model, 'lf_pvt')
+        model_params = print_network(model, opt.model_name)
     os.makedirs(opt.save_path, exist_ok=True)
     #模型并行
     if opt.DDP: model = DistributedDataParallel(model, find_unused_parameters=True)
@@ -141,6 +150,8 @@ if __name__ == '__main__':
     
     test_loader = test_dataset(opt.test_rgb_root, opt.test_gt_root, opt.test_fs_root,testsize=opt.trainsize)
     Iter = len(train_loader)
+    
+    
 
     #保存和初始化日志项
     if not opt.DDP or dist.get_rank() == 0:
@@ -154,8 +165,15 @@ if __name__ == '__main__':
     #if opt.resume == False:
     for epoch in range(start_epoch, opt.epoch+1):       
         cur_lr = adjust_lr(optimizer, opt.lr, epoch, opt.decay_rate, opt.decay_epoch)       
-        train(train_loader, model, optimizer, epoch, opt.save_path)
-        test(test_loader, model, epoch, opt.save_path,optimizer)
+        train(train_loader, model, optimizer, epoch, opt.checkpoints)
+        test(test_loader, model, epoch, opt.checkpoints,optimizer)
+   
+
+
+
+
+
+
     #else:
     #    print('Start Resume')
     #    checkpoint = torch.load(opt.load_resume)
