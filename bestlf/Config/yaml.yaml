@@ -1,7 +1,8 @@
 # MODEL:
 seed                       : 3407
-backbone                   : afformer_base
-pretrained_model           : null
+backbone                   : cgnet
+
+pretrained_model           : Null
 decoder                    : MLPDecoder
 decoder_embed_dim          : 512
 
@@ -52,7 +53,7 @@ norm_std                   : [0.229, 0.224, 0.225]
 
 
 # TRAIN:
-batch_size                 : 15
+batch_size                 : 1
 
 nepochs                    : 500
 niters_per_epoch           : 12
