@@ -13,7 +13,8 @@ from torch.nn.parallel import DistributedDataParallel
 
 from Dataloader.SODdataloader import test_dataset, SalObjDataset
 
-from Config.SOD_options import opt,parser
+# from Config.SOD_options import opt,parser
+from Config.opt import opt
 from SOD_Network_utils.utils import clip_gradient, adjust_lr
 
 from SOD_Network_utils.train import (
@@ -29,17 +30,16 @@ from SOD_Network_utils.train import (
     log_and_save
 )
 import torch.nn as nn
-from Config.SS_config1 import config
-from Dataloader.SS_dataloader import get_train_loader, get_test_loader
+# 使用示例
+
 
 from Dataloader.SS_Dataset import RGBXDataset
 from SS_utils.init_func import init_weight, group_weight,print_network
 from SS_utils.lr_policy import WarmUpPolyLR
 from SS_engine.engine import Engine
-from SS_engine.logger import get_logger
-from SS_utils.pyt_utils import all_reduce_tensor
-from SS_engine.engine import Engine
-from SS_eval import SegEvaluator
+
+from SS_utils.pyt_utils import all_reduce_tensor, load_model
+import SS_utils.eval_utils as eval_utils
 import sys
 from tqdm import tqdm
 
@@ -74,12 +74,12 @@ def SOD_train(optimizer, train_loader, save_path):
         saver.save_resume_checkpoint(epoch, model, optimizer, save_path) if not opt.DDP or dist.get_rank() == 0 else None
 
 
-def SS_train(engine, config, epoch):
+def SS_train(engine, opt, epoch):
 
-    if engine.distributed:
+    if opt.DDP:
         train_sampler.set_epoch(epoch)#数据采样器，分配数据
     bar_format = '{desc}[{elapsed}<{remaining},{rate_fmt}]'
-    pbar = tqdm(range(config.niters_per_epoch), file=sys.stdout,
+    pbar = tqdm(range(opt.niters_per_epoch), file=sys.stdout,
                 bar_format=bar_format)
     dataloader = iter(train_loader)#加载器到迭代器
     sum_loss = 0
@@ -105,51 +105,50 @@ def SS_train(engine, config, epoch):
         # tensor_img = torch.tensor(List_Img)
         loss = model(List_Img,Label)
         # reduce the whole loss over multi-gpu
-        if engine.distributed:
+        if opt.DDP:
             reduce_loss = all_reduce_tensor(loss, world_size=engine.world_size)
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        current_idx = (epoch- 1) * config.niters_per_epoch + idx 
+        current_idx = (epoch- 1) * opt.niters_per_epoch + idx 
         lr = engine.lr_policy.get_lr(current_idx)
         for i in range(len(optimizer.param_groups)):
             optimizer.param_groups[i]['lr'] = lr
-        if engine.distributed:
+        if opt.DDP:
             sum_loss += reduce_loss.item()
-            print_str = 'Epoch {}/{}'.format(epoch, config.nepochs) \
-                    + ' Iter {}/{}:'.format(idx + 1, config.niters_per_epoch) \
+            print_str = 'Epoch {}/{}'.format(epoch, opt.epoch) \
+                    + ' Iter {}/{}:'.format(idx + 1, opt.niters_per_epoch) \
                     + ' lr=%.4e' % lr \
                     + ' loss=%.4f total_loss=%.4f' % (reduce_loss.item(), (sum_loss / (idx + 1)))
         else:
             sum_loss += loss
-            print_str = 'Epoch {}/{}'.format(epoch, config.nepochs) \
-                    + ' Iter {}/{}:'.format(idx + 1, config.niters_per_epoch) \
+            print_str = 'Epoch {}/{}'.format(epoch, opt.epoch) \
+                    + ' Iter {}/{}:'.format(idx + 1, opt.niters_per_epoch) \
                     + ' lr=%.4e' % lr \
                     + ' loss=%.4f total_loss=%.4f' % (loss, (sum_loss / (idx + 1)))
         del loss
         pbar.set_description(print_str, refresh=False)
     # if (engine.distributed and (engine.local_rank == 0)) or (not engine.distributed):
     #     tb.add_scalar('train_loss', sum_loss / len(pbar), epoch)
-    if (epoch >= config.checkpoint_start_epoch) and (epoch % config.checkpoint_step == 0) or (epoch == config.nepochs):
-        if engine.distributed and (engine.local_rank == 0):
-            current_epoch=engine.save_and_link_checkpoint(config.checkpoint_dir,
-                                            config.log_dir,
-                                            config.log_dir_link)
-        elif not engine.distributed:
-            current_epoch=engine.save_and_link_checkpoint(config.checkpoint_dir,
-                                            config.log_dir,
-                                            config.log_dir_link)
+    # if (epoch >= opt.checkpoint_start_epoch) and (epoch % opt.checkpoint_step == 0) or (epoch == opt.epoch):
+    #     if opt.DDP and (opt.local_rank == 0):
+    #         current_epoch=engine.save_and_link_checkpoint(opt.checkpoint_dir,
+    #                                         opt.log_dir,
+    #                                         opt.log_dir_link)
+    #     elif not opt.DDP:
+    #         current_epoch=engine.save_and_link_checkpoint(opt.checkpoint_dir,
+    #                                         opt.log_dir,
+    #                                         opt.log_dir_link)
 
 
-def train(train_loader, model, optimizer, epoch, save_path, task, engine, config):
+def train(train_loader, model, optimizer, epoch, save_path, task, engine, opt):
     #global step
     if not os.path.exists(save_path):
         os.mkdir(save_path)
     model.train()
     try:
         if task=='SS':
-            if (epoch >= config.checkpoint_start_epoch) and (epoch % config.checkpoint_step == 0) or (epoch == config.nepochs):
-                SS_train(engine, config, epoch)
+                SS_train(engine, opt, epoch)
         else:
             SOD_train(optimizer, train_loader, save_path)
   
@@ -178,32 +177,48 @@ def SOD_test(test_loader, model, epoch, save_path,optimizer):
     best_mae, best_epoch = log_and_save(epoch, mae, best_mae, best_epoch, model, save_path,optimizer)
 
 
-def SS_test(test_loader, model, epoch, save_path, config):
-    global segmentor
-    segmentor.run(config.checkpoint_dir, epoch, config.val_log_file,
-                    config.link_val_log_file, config.checkpoint_step)
+def SS_test(test_loader, model, epoch, save_path, opt):
+    global max_Miou, best_epoch
 
-def test(test_loader, model, epoch, save_path,optimizer,task,engine, config):
+    tmp_m_Iou, result=eval_utils.eval(test_loader, model, opt)
+    if max_Miou<=tmp_m_Iou:
+        max_Miou=tmp_m_Iou
+        best_epoch=epoch
+        # torch.save(model.state_dict(), save_path + 'best.pth')
+    logging.info(result)
+    print("----------------------   best M_Iou:{:.3f}  best epoch{}".format(max_Miou, best_epoch))
+
+
+def test(test_loader, model, epoch, save_path,optimizer,task, opt):
 
     model.eval()#评估模式
     with torch.no_grad():
         if task=='SS':
-            SS_test(test_loader, model, epoch, save_path, config)
+            SS_test(test_loader, model, epoch, save_path, opt)
         else:
-            SOD_test(test_loader, model, epoch, save_path,optimizer)
+            SOD_test(test_loader, model, epoch, save_path, optimizer)
 
 
 if __name__ == '__main__':
 ####################也不管
+    if torch.cuda.is_available():
+        # 获取CUDA版本
+        cuda_version = torch.version.cuda
+        print("CUDA 版本:", cuda_version)
+    else:
+        print("CUDA 不可用")
     if opt.task=='SS':
         from models.builder import EncoderDecoder as segmodel
-        from Config.SS_config1 import config
-        engine=Engine(parser)
-        criterion = nn.CrossEntropyLoss(reduction='mean', ignore_index=config.background)
+
+        opt.log_dir=opt.save_path
+        engine=Engine(None)
+        criterion = nn.CrossEntropyLoss(reduction='mean', ignore_index=opt.background)
     else:
-        engine=None
         from Builder.SOD_Builder import model
-    logging.info("Start train...")      
+        engine=None
+    end_epoch=opt.epoch
+
+    logging.info("Start %s train..."%opt.task)      
     if opt.DDP == True: 
         local_rank = int(os.environ.get("LOCAL_RANK", 0))                         
         torch.cuda.set_device(local_rank)
@@ -219,19 +234,18 @@ if __name__ == '__main__':
             BatchNorm2d = nn.SyncBatchNorm
         else:
             BatchNorm2d = nn.BatchNorm2d    
-        model=segmodel(cfg=config, criterion=criterion, norm_layer=BatchNorm2d)
+        model=segmodel(criterion=criterion, norm_layer=BatchNorm2d)
         params_list=[]
-        train_loader, train_sampler = get_train_loader(engine, RGBXDataset)
 
-        if config.optimizer == 'AdamW':
-            params_list= group_weight(params_list, model, BatchNorm2d, config.lr)
-            optimizer = torch.optim.AdamW(params_list, lr=config.lr, betas=(0.9, 0.999), weight_decay=config.weight_decay)
-        elif config.optimizer == 'SGDM':
-            optimizer = torch.optim.SGD(params_list, lr=config.lr, momentum=config.momentum, weight_decay=config.weight_decay)
+        if opt.optimizer == 'AdamW':
+            params_list= group_weight(params_list, model, BatchNorm2d, opt.lr)
+            optimizer = torch.optim.AdamW(params_list, lr=opt.lr, betas=(0.9, 0.999), weight_decay=opt.weight_decay)
+        elif opt.optimizer == 'SGDM':
+            optimizer = torch.optim.SGD(params_list, lr=opt.lr, momentum=opt.momentum, weight_decay=opt.weight_decay)
         else:
             raise NotImplementedError
-        total_iteration = config.nepochs * config.niters_per_epoch
-        engine.lr_policy = WarmUpPolyLR(config.lr, config.lr_power, total_iteration, config.niters_per_epoch * config.warm_up_epoch)
+        total_iteration = opt.epoch * opt.niters_per_epoch
+        engine.lr_policy = WarmUpPolyLR(opt.lr, opt.lr_power, total_iteration, opt.niters_per_epoch * opt.warm_up_epoch)
 
     else:
         model = model() 
@@ -269,46 +283,45 @@ if __name__ == '__main__':
     if opt.DDP == True:
         print('load data...') if dist.get_rank() == 0 else None
     if opt.task=='SS':
-        train_loader, train_sampler = get_train_loader(engine, RGBXDataset)
-        test_loader =get_test_loader(RGBXDataset, config)
-        engine.register_state(dataloader=train_loader, model=model,
-                          optimizer=optimizer)
+        train_dataset = RGBXDataset(opt, "train")
+        test_loader =RGBXDataset(opt, "val")
+        # # train_sampler = DistributedSampler(train_dataset)
+        # train_loader = data.DataLoader(dataset=train_dataset, batch_size=opt.batch_size, shuffle=False, pin_memory=True)#, sampler=train_sampler)
         if engine.continue_state_object:
             engine.restore_checkpoint()
-        segmentor = SegEvaluator(test_loader, config.num_classes, config.norm_mean,
-                        config.norm_std, model,
-                        config.eval_scale_array, config.eval_flip,
-                        devices=[0])
     else : 
-        train_dataset = SalObjDataset(opt.rgb_root, opt.gt_root, opt.fs_root,trainsize=opt.trainsize)  
+        train_dataset = SalObjDataset(opt.rgb_root, opt.gt_root, opt.fs_root,trainsize=opt.train_size)  
+        test_loader = test_dataset(opt.test_rgb_root, opt.test_gt_root, opt.test_fs_root,testsize=opt.train_size)
 
-        if opt.DDP == True:
-            train_sampler = DistributedSampler(train_dataset)
-            train_loader = data.DataLoader(dataset=train_dataset, batch_size=opt.batchsize, shuffle=False, pin_memory=True, sampler=train_sampler)
-        else:
-            train_loader = data.DataLoader(dataset=train_dataset, batch_size=opt.batchsize, shuffle=True, pin_memory=True)
+    if opt.DDP == True:
+        train_sampler = DistributedSampler(train_dataset)
+        train_loader = data.DataLoader(dataset=train_dataset, batch_size=opt.batch_size, shuffle=False, pin_memory=True, sampler=train_sampler)
+    else:
+        train_loader = data.DataLoader(dataset=train_dataset, batch_size=opt.batch_size, shuffle=True, pin_memory=True)
     
-        test_loader = test_dataset(opt.test_rgb_root, opt.test_gt_root, opt.test_fs_root,testsize=opt.trainsize)
+    if opt.task=='SS':
+        engine.register_state(dataloader=train_loader, model=model,
+                          optimizer=optimizer)
     Iter = len(train_loader)
     
     
 
-    #保存和初始化日志项
-    if not opt.DDP or dist.get_rank() == 0:
+    #保存和初始化日志项路径
+    if (not opt.DDP or dist.get_rank()== 0) and (opt.task =='SOD') :
         setup_logging(opt.save_path, model_params, opt)
     best_mae = 1
-    ax_M_iou=0
+    max_Miou=0
     best_epoch = 0
     saver = ModelSaver()
     logger = Logger()
     
     
     #if opt.resume == False:
-    for epoch in range(start_epoch, opt.epoch+1):
-        if opt.task!='SS':       
+    for epoch in range(start_epoch, end_epoch):
+        if opt.task=='SOD':       
             cur_lr = adjust_lr(optimizer, opt.lr, epoch, opt.decay_rate, opt.decay_epoch) #指数衰减      
-        train(train_loader, model, optimizer, epoch, opt.checkpoints, opt.task, engine, config)
-        test(test_loader, model, epoch, opt.checkpoints,optimizer, opt.task, engine, config)
+        train(train_loader, model, optimizer, epoch, opt.checkpoints, opt.task, engine, opt)
+        test(test_loader, model, epoch, opt.checkpoints, optimizer, opt.task,  opt)
    
 
 
