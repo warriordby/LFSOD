@@ -12,18 +12,21 @@ import torch.backends.cudnn as cudnn
 from torch.nn.parallel import DistributedDataParallel
 
 from Config.SS_config1 import config
-from Dataloader.SS_dataloader import get_train_loader
+from Dataloader.SS_dataloader import get_train_loader, get_test_loader
 from models.builder import EncoderDecoder as segmodel
 from Dataloader.SS_Dataset import RGBXDataset
-from SS_utils.init_func import init_weight, group_weight
+from SS_utils.init_func import init_weight, group_weight,print_network
 from SS_utils.lr_policy import WarmUpPolyLR
 from SS_engine.engine import Engine
 from SS_engine.logger import get_logger
 from SS_utils.pyt_utils import all_reduce_tensor
+from SS_eval import Eval_per_iter 
+import subprocess
 
 from tensorboardX import SummaryWriter
 
 parser = argparse.ArgumentParser()
+parser.add_argument('-e', '--epochs', default='last', type=str)
 logger = get_logger()
 
 os.environ['MASTER_PORT'] = '169710'
@@ -34,6 +37,7 @@ with Engine(custom_parser=parser) as engine:
     cudnn.benchmark = True
     seed = config.seed
     if engine.distributed:
+        print(engine.distribute)
         seed = engine.local_rank
     torch.manual_seed(seed)
     if torch.cuda.is_available():
@@ -52,7 +56,9 @@ with Engine(custom_parser=parser) as engine:
         BatchNorm2d = nn.SyncBatchNorm
     else:
         BatchNorm2d = nn.BatchNorm2d    
-    model=segmodel(cfg=config, criterion=criterion, norm_layer=BatchNorm2d)   
+    model=segmodel(cfg=config, criterion=criterion, norm_layer=BatchNorm2d)
+    # Eval_model=Eval_per_iter(args, config)
+
     # group weight and config optimizer
     base_lr = config.lr
     if engine.distributed:
@@ -75,6 +81,8 @@ with Engine(custom_parser=parser) as engine:
             model = DistributedDataParallel(model, device_ids=[engine.local_rank],
                                             output_device=engine.local_rank, find_unused_parameters=True, broadcast_buffers=False)
     else:
+        model_params = print_network(model, 'lf_pvt')#打印参数
+        logger.info('params:',model_params)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
     engine.register_state(dataloader=train_loader, model=model,
@@ -86,11 +94,11 @@ with Engine(custom_parser=parser) as engine:
     logger.info('begin trainning:')
     for epoch in range(engine.state.epoch, config.nepochs+1):
         if engine.distributed:
-            train_sampler.set_epoch(epoch)
+            train_sampler.set_epoch(epoch)#数据采样器，分配数据
         bar_format = '{desc}[{elapsed}<{remaining},{rate_fmt}]'
         pbar = tqdm(range(config.niters_per_epoch), file=sys.stdout,
                     bar_format=bar_format)
-        dataloader = iter(train_loader)
+        dataloader = iter(train_loader)#加载器到迭代器
         sum_loss = 0
         for idx in pbar:
             engine.update_iteration(epoch, idx)
@@ -104,7 +112,14 @@ with Engine(custom_parser=parser) as engine:
             del List_Img[1]     
             del List_Img[-1]      
             del List_Img[-1]                   
-            aux_rate = 0.2     
+            aux_rate = 0.2    
+            print("List length:", len(List_Img))
+
+            # # 遍历列表中的每个子列表，并输出其长度（即维度信息）
+            # for i, sublist in enumerate(List_Img):
+            #     print(f"Sublist {i+1} shape:", len(sublist)) 
+
+            # tensor_img = torch.tensor(List_Img)
             loss = model(List_Img,Label)
             # reduce the whole loss over multi-gpu
             if engine.distributed:
@@ -134,10 +149,15 @@ with Engine(custom_parser=parser) as engine:
             tb.add_scalar('train_loss', sum_loss / len(pbar), epoch)
         if (epoch >= config.checkpoint_start_epoch) and (epoch % config.checkpoint_step == 0) or (epoch == config.nepochs):
             if engine.distributed and (engine.local_rank == 0):
-                engine.save_and_link_checkpoint(config.checkpoint_dir,
+                current_epoch=engine.save_and_link_checkpoint(config.checkpoint_dir,
                                                 config.log_dir,
                                                 config.log_dir_link)
             elif not engine.distributed:
-                engine.save_and_link_checkpoint(config.checkpoint_dir,
+                current_epoch=engine.save_and_link_checkpoint(config.checkpoint_dir,
                                                 config.log_dir,
                                                 config.log_dir_link)
+
+            
+
+
+
