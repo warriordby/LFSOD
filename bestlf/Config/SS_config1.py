@@ -24,30 +24,30 @@ C.dataset_name = 'NYUDepthv2'
 C.dataset_path = osp.join(C.root_dir, 'datasets', 'NYUDepthv2')
 
 #Data_RGB
-C.rgb_root_folder = Y.rgb_root_folder
+C.rgb_root_folder = '/root/autodl-tmp/syn/Syn/View/V55'
 C.rgb_format = '.png'
 
 #Data_View
-C.rgb_view_path = Y.rgb_view_path
+C.rgb_view_path = "/root/autodl-tmp/syn/Syn/View"
 C.rgb_view_format = '.png'
-C.view_list = Y.view_list
+C.view_list = "/root/autodl-tmp/SS/syn8/viewlist.txt"
 ####
 #Data_Label
-C.gt_root_folder = Y.gt_root_folder
+C.gt_root_folder = '/root/autodl-tmp/syn/Syn/Label' 
 C.gt_format = '.png'
-C.gt_transform = Y.gt_transform
+C.gt_transform = True
 # True when label 0 is invalid, you can also modify the function _transform_gt in dataloader.RGBXDataset
 # True for most dataset valid, Faslse for MFNet(?)
 #Data_X
-C.x_root_folder = Y.x_root_folder
+C.x_root_folder =  '/root/autodl-tmp/syn/Syn/View/V11' 
 C.x_format = '.png'
-C.x_is_single_channel = Y.x_is_single_channel
-C.train_source = Y.train_source
-C.eval_source = Y.eval_source
+C.x_is_single_channel = False
+C.train_source = '/root/autodl-tmp/syn/Train_list.txt'
+C.eval_source = '/root/autodl-tmp/syn/Val_list.txt'
 
 C.is_test = False
-C.num_train_imgs = Y.num_train_imgs
-C.num_eval_imgs = Y.num_eval_imgs
+C.num_train_imgs = 172
+C.num_eval_imgs = 28
 C.num_classes = 14
 C.class_names =  ['bike','building','fence','others','person','pole','road','sidewalk','traffic sign','vegetation','vehicle','bridge','rider',
     'sky']
@@ -60,8 +60,8 @@ C.norm_mean = np.array([0.485, 0.456, 0.406])
 C.norm_std = np.array([0.229, 0.224, 0.225])
 
 """ Settings for network, this would be different for each kind of model"""
-C.backbone = Y.backbone # Remember change the path below.
-C.pretrained_model = Y.pretrained_model
+C.backbone = 'agent_pvt' # Remember change the path below.
+C.pretrained_model = None
 
 C.decoder = 'MLPDecoder'
 C.decoder_embed_dim = 512
@@ -73,16 +73,16 @@ C.lr_power = 0.9
 C.momentum = 0.9
 C.weight_decay = 0.01
 
-C.batch_size = Y.batch_size
+C.batch_size = 15
 
-C.nepochs = Y.nepochs
+C.nepochs = 500
 C.niters_per_epoch = C.num_train_imgs // C.batch_size  + 1
 
 ##config.batch_size * config.niters_per_epoch  = config.num_train_imgs 
 ##所以当txt文件中文件编号，小于num_train_imgs时，会重复读取txt文件中的文件编号，直到达到num_train_imgs
 ##所以当txt文件中文件编号，大于num_train_imgs时，会随机读取txt文件中的文件编号，直到达到num_train_imgs
 
-C.num_workers = Y.num_workers
+C.num_workers = 8
 C.train_scale_array = [0.5, 0.75, 1, 1.25, 1.5, 1.75]
 C.warm_up_epoch = 10
 
@@ -98,8 +98,8 @@ C.eval_flip = False # True #
 C.eval_crop_size = [480, 640] # [height weight]
 
 """Store Config"""
-C.checkpoint_start_epoch = 0
-C.checkpoint_step = 1
+C.checkpoint_start_epoch = 100
+C.checkpoint_step = 5
 
 """Path Config"""
 def add_path(path):

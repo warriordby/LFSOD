@@ -23,9 +23,16 @@ Y.eval_source = '/root/autodl-tmp/syn/Val_list.txt'
 Y.num_train_imgs = 172
 Y.num_eval_imgs = 28
 
-Y.backbone = 'mit_b0' # Remember change the path below.
-Y.pretrained_model = r'/root/autodl-tmp/SS/syn8/mit_b0.pth'
+# Y.backbone = 'mit_b0' # Remember change the path below.
+Y.backbone = 'agent_pvt' 
+# Y.backbone='mscan_b'
+# Y.backbone = 'pvt'
+# Y.backbone = 'agent_swin' # Remember change the path below.
+# Y.backbone = 'segeformer_mit_b2'
+# Y.pretrained_model = r'/root/autodl-tmp/SS/syn8/mit_b0.pth'
+# Y.pretrained_model = r'/root/autodl-tmp/LFSOD/bestlf/Pretain_weight/fpn_agent_pvt_s_12-16-28-28.pth'
+Y.pretrained_model = None
 
-Y.batch_size = 9
-Y.nepochs = 900
+Y.batch_size = 15
+Y.nepochs = 500
 Y.num_workers = 8

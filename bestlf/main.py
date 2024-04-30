@@ -13,7 +13,6 @@ from torch.nn.parallel import DistributedDataParallel
 
 from Dataloader.SODdataloader import test_dataset, SalObjDataset
 
-# from Config.SOD_options import opt,parser
 from Config.opt import opt
 from SOD_Network_utils.utils import clip_gradient, adjust_lr
 
@@ -74,19 +73,18 @@ def SOD_train(optimizer, train_loader, save_path):
         saver.save_resume_checkpoint(epoch, model, optimizer, save_path) if not opt.DDP or dist.get_rank() == 0 else None
 
 
-def SS_train(engine, opt, epoch):
+def SS_train(engine, train_loader,opt, epoch):
 
     if opt.DDP:
         train_sampler.set_epoch(epoch)#数据采样器，分配数据
     bar_format = '{desc}[{elapsed}<{remaining},{rate_fmt}]'
-    pbar = tqdm(range(opt.niters_per_epoch), file=sys.stdout,
-                bar_format=bar_format)
+    # pbar = tqdm(range(opt.niters_per_epoch), file=sys.stdout,
+    #             bar_format=bar_format)
     dataloader = iter(train_loader)#加载器到迭代器
     sum_loss = 0
-    for idx in pbar:
-        engine.update_iteration(epoch, idx)
-        minibatch = next(dataloader)
-        ###['data', 'label', 'modal_x', 'view11', 'view22', 'fn', 'n']
+    # for idx in pbar:
+    for idx, minibatch in enumerate(tqdm(train_loader, desc="Training")):
+        engine.update_iteration(epoch, idx)#记录编号
         List_Img_Name = list(minibatch.keys())            
         List_Img = list(minibatch.values())
         for i in range(len(List_Img)-2):
@@ -96,17 +94,10 @@ def SS_train(engine, opt, epoch):
         del List_Img[-1]      
         del List_Img[-1]                   
         aux_rate = 0.2    
-        print("List length:", len(List_Img))
-
-        # # 遍历列表中的每个子列表，并输出其长度（即维度信息）
-        # for i, sublist in enumerate(List_Img):
-        #     print(f"Sublist {i+1} shape:", len(sublist)) 
-
-        # tensor_img = torch.tensor(List_Img)
         loss = model(List_Img,Label)
         # reduce the whole loss over multi-gpu
         if opt.DDP:
-            reduce_loss = all_reduce_tensor(loss, world_size=engine.world_size)
+            reduce_loss = all_reduce_tensor(loss)
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
@@ -126,20 +117,8 @@ def SS_train(engine, opt, epoch):
                     + ' Iter {}/{}:'.format(idx + 1, opt.niters_per_epoch) \
                     + ' lr=%.4e' % lr \
                     + ' loss=%.4f total_loss=%.4f' % (loss, (sum_loss / (idx + 1)))
+        # print(print_str, end='\r')  # 使用 \r 实现覆盖式打印，即每次打印都会覆盖上一行内容
         del loss
-        pbar.set_description(print_str, refresh=False)
-    # if (engine.distributed and (engine.local_rank == 0)) or (not engine.distributed):
-    #     tb.add_scalar('train_loss', sum_loss / len(pbar), epoch)
-    # if (epoch >= opt.checkpoint_start_epoch) and (epoch % opt.checkpoint_step == 0) or (epoch == opt.epoch):
-    #     if opt.DDP and (opt.local_rank == 0):
-    #         current_epoch=engine.save_and_link_checkpoint(opt.checkpoint_dir,
-    #                                         opt.log_dir,
-    #                                         opt.log_dir_link)
-    #     elif not opt.DDP:
-    #         current_epoch=engine.save_and_link_checkpoint(opt.checkpoint_dir,
-    #                                         opt.log_dir,
-    #                                         opt.log_dir_link)
-
 
 def train(train_loader, model, optimizer, epoch, save_path, task, engine, opt):
     #global step
@@ -148,7 +127,7 @@ def train(train_loader, model, optimizer, epoch, save_path, task, engine, opt):
     model.train()
     try:
         if task=='SS':
-                SS_train(engine, opt, epoch)
+                SS_train(engine, train_loader, opt, epoch)
         else:
             SOD_train(optimizer, train_loader, save_path)
   
@@ -257,7 +236,8 @@ if __name__ == '__main__':
 #############先不管
     if opt.resume == False:  
         start_epoch = 0
-        load_pretrained_weights(model, opt)
+        if opt.task=='SOD':
+            load_pretrained_weights(model, opt)
           #weight_decay正则化系数
     else:
         print('Start Resume')
@@ -302,18 +282,20 @@ if __name__ == '__main__':
     if opt.task=='SS':
         engine.register_state(dataloader=train_loader, model=model,
                           optimizer=optimizer)
-    Iter = len(train_loader)
+    Iter = len(train_loader)#批次数量
     
     
 
     #保存和初始化日志项路径
-    if (not opt.DDP or dist.get_rank()== 0) and (opt.task =='SOD') :
-        setup_logging(opt.save_path, model_params, opt)
+    if (not opt.DDP or dist.get_rank()== 0):
+        if (opt.task =='SOD') :
+            setup_logging(opt.save_path, model_params, opt)
     best_mae = 1
-    max_Miou=0
-    best_epoch = 0
     saver = ModelSaver()
     logger = Logger()
+    max_Miou=0
+    best_epoch = 0
+
     
     
     #if opt.resume == False:

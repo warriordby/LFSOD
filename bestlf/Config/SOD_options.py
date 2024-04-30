@@ -28,12 +28,12 @@ parser.add_argument('--test_gt_root', type=str, default='/root/autodl-tmp/test_i
 #default='./dataset/focal_stack/test_in_train/test_masks/'
 parser.add_argument('--save_path', type=str, default='./log/', help='the root path to save models and logs')
 parser.add_argument('--local_rank', type=int, default=0, help='Local rank for distributed training')
-parser.add_argument('--DDP', action='store_true', default=False, help='Single or Multi GPUs')
+parser.add_argument('--DDP', action='store_true', default=True, help='Single or Multi GPUs')
 parser.add_argument('--resume', action='store_true', default=False, help='resume training processs')
 parser.add_argument('--checkpoints', type=str, default=False, help='resume training processs')
 #文件路径按照save path进行更改
 # parser.add_argument('--load_resume', type=str, default='/root/autodl-tmp/第二次/Code/lfsod_cpts/lfsod_epoch_best.pth', help='resume_checkpoint')
-parser.add_argument('--task', type=str, default='SS', help='training option')
+parser.add_argument('--task', type=str, default='SOD', help='training option')
 parser.add_argument('--d', type=int, default=0, help='SS training device option')
 opt = parser.parse_args()
 

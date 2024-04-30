@@ -1,0 +1,22 @@
+# config.yaml
+dataset_name       : lfsod
+epoch          : 200
+
+lr             : 0.00005
+batch_size      : 15
+train_size      : 256
+clip           : 0.5
+decay_rate     : 0.1
+decay_epoch    : 100
+
+rgb_root       : '/root/autodl-tmp/train/train_images/'
+fs_root        : '/root/autodl-tmp/train/train_focals/'
+gt_root        : '/root/autodl-tmp/train/train_masks/'
+test_rgb_root  : '/root/autodl-tmp/test_in_train/test_images/'
+test_fs_root   : '/root/autodl-tmp/test_in_train/test_focals/'
+test_gt_root   : '/root/autodl-tmp/test_in_train/test_masks/'
+
+
+resume         : false
+checkpoints    : false
+load_mit       : false
