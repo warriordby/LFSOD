@@ -1,0 +1,3 @@
+NVIDIA 驱动程序版本：535.129.03
+GCC 版本：gcc version 9.4.0
+x86_64
